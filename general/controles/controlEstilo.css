@@ -1,4 +1,4 @@
-/* Menu Normal */
+/* Menu Principal */
 .menu { /* Coloca una "burbuja" de color gris alrededor de la imagen con bordes inferiores redondeados*/
 	background: #4a4a4a;
 	padding: 0px 0px 6px 0px;
@@ -113,7 +113,8 @@
 	}
 }
 
-/* Cuerpo del Documento */
+/* CUERPO DEL DOCUMENTO */
+	/* General */
 * {
 	font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
   }
@@ -138,15 +139,10 @@ hr {
 	height: 3px;
 }
 
+	/* Especifico */
+
 .presentacion {	
 	padding: 8px 20px;
-	margin: 8px;
-	border-radius: 10px;
-	background: #ffffff;
-}
-
-.contGeneral {
-	padding: 8px;
 	margin: 8px;
 	border-radius: 10px;
 	background: #ffffff;
@@ -167,43 +163,25 @@ hr {
 	margin: 16px;
 }
 
-/* Otros Divs No Especificos */
-div {
+/* Elementos Genéricos */
+.contGeneral {
 	padding: 8px;
 	margin: 8px;
 	border-radius: 10px;
 	background: #ffffff;
 }
 
-.foto {
-	margin: 0;
-	padding: 8px;
-	text-align: center;
-	background: #cfcfcf;
-	border-radius: 6px 6px 0px 0px;
-}
-
-.infoFecha {
+.titulo {
+	padding:8px;
+	margin: 8px;
 	text-align: center;
 	background: #a1a1a1;
-	border-radius: 0px 0px 6px 6px;
-}
-
-.infoFecha > p {
-	margin: 0px;
-	padding: 5px;
-	font-size: 26px;
-}
-
-.infoC {
-	margin: 4px;
-	padding: 4px 8px;
-	background: #cfcfcf;
-	border-radius: 6px;
+	border-radius: 10px;
 }
 
 .titBloqueCreditos {
-	margin: 2px;
+	margin: 8px 8px 0px 8px;
+	padding: 8px;
 	text-align: center;
 	background: #a1a1a1;
 	border-radius: 6px 6px 0px 0px;
@@ -216,7 +194,7 @@ div {
 }
 
 .acreditados {
-	margin: 0px 2px 10px 2px;
+	margin: 0px 8px 8px 8px;
 	padding: 2px;
 	text-align: center;
 	background: #cfcfcf;
@@ -228,28 +206,42 @@ div {
 	padding: 2px;
 }
 
-.titulo {
+/* Imagenes y Videos */
+	/* Presidencia */
+.foto {
+	margin: 8px 8px 1px 8px;
+	padding: 8px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.infoFecha {
+	margin: 1px 8px 8px 8px;
+	padding: 8px;
 	text-align: center;
 	background: #a1a1a1;
-	border-radius: 10px;
+	border-radius: 0px 0px 6px 6px;
 }
 
-.listaG {
-	margin: 2px 2px 0px 2px;
-	padding: 2px 2px 0px 2px;
-	display: flex;
-	justify-content: space-evenly;
+.infoFecha > p {
+	margin: 0px;
+	padding: 5px;
+	font-size: 26px;
 }
 
-.listaG a {
-	font-size: 20px;
-	margin: 2px;
-	padding: 4px 20px;
-	background: #e0e0e0;
-	border-radius: 10px;
+.infoPresidencia {
+	margin: 8px;
+	padding: 8px;
+	background: #cfcfcf;
+	border-radius: 6px;
 }
+
+	/* Carrusel de Fotos */
 
 .carrusel-fotos {
+	padding: 0px 8px 8px 8px;
+	margin: 0px 8px 8px 8px;
 	display: flex;
 	justify-content: center;
 }
@@ -265,6 +257,22 @@ div {
 
 .carrusel-fotos video:hover {
 	width: 100%;
+}
+
+/* Otros */
+.listaG {
+	margin: 2px 2px 0px 2px;
+	padding: 2px 2px 0px 2px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.listaG a {
+	font-size: 20px;
+	margin: 2px;
+	padding: 4px 20px;
+	background: #e0e0e0;
+	border-radius: 10px;
 }
 
 blockquote { /*Este es único para Tiktok*/
