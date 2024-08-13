@@ -1,0 +1,311 @@
+/* Menu Normal */
+.menu { /* Coloca una "burbuja" de color gris alrededor de la imagen con bordes inferiores redondeados*/
+	background: #4a4a4a;
+	padding: 0px 0px 6px 0px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.navegacion ul{ /* Quita el estilo de lista a todos los elementos de esta */
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+.listaMenu {
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+}
+
+.listaMenu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.listaMenu > li > a { /* Agrega un rectángulo redondeado color blanco a cada item */
+	display: block;
+	padding: 10px 36px;
+	margin: 2px;
+	border-radius: 15px;
+	background: #ffffff;
+}
+
+.listaMenu li a:hover {
+	color: #CE7D35;
+}
+
+.submenuDocs {
+	position: absolute;
+	background: #f3f3f3;
+	padding: 0px 12px;
+	border-radius: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.submenuDocs li a {
+	display: block;
+	padding: 8px;
+}
+
+.listaMenu li:hover .submenuDocs {
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenuOtros {
+	position: absolute;
+	background: #f3f3f3;
+	padding: 0px 12px;
+	border-radius: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.submenuOtros li a {
+	display: block;
+	padding: 8px;
+}
+
+.listaMenu li:hover .submenuOtros {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Menú para Celulares e Imagen Titulo */
+@media (max-width: 614px){
+	.menu {
+		padding: 0px 6px 6px 6px;
+	}
+
+	.listaMenu {
+		display:flow;
+		flex-direction: none;
+	}
+	
+	.listaMenu > li {
+		position: static;
+		display: grid;
+	}
+	
+	.listaMenu > li > a { /* Agrega un rectángulo redondeado color blanco a cada item */
+	display: grid;
+	border-radius: 10px;
+	justify-content: center;
+	}
+	
+	.listaMenu li:hover .submenuDocs {
+	position: static;
+	visibility: visible;
+	opacity: 1;
+	}
+	
+	.listaMenu li:hover .submenuOtros {
+	position: static;
+	visibility: visible;
+	opacity: 1;
+	}
+
+	.img-titulo {
+		width: 65%;
+	}
+}
+
+/* Cuerpo del Documento */
+* {
+	font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
+  }
+	
+.logo img {
+  width: 100%;
+  height: auto;
+}
+	
+body {
+	background-image:url(../imagenes/imgFondo.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+	
+a {
+	text-decoration: none;
+	color: #000000;
+}
+	
+hr {
+	height: 3px;
+}
+
+.presentacion {	
+	padding: 8px 20px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.contGeneral {
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.acerca {
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #e0e0e0;
+}
+
+.acerca h3 {
+	margin: 16px;
+}
+
+.acerca p {
+	margin: 16px;
+}
+
+/* Otros Divs No Especificos */
+div {
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.foto {
+	margin: 0;
+	padding: 8px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.infoFecha {
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.infoFecha > p {
+	margin: 0px;
+	padding: 5px;
+	font-size: 26px;
+}
+
+.infoC {
+	margin: 4px;
+	padding: 4px 8px;
+	background: #cfcfcf;
+	border-radius: 6px;
+}
+
+.titBloqueCreditos {
+	margin: 2px;
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.titBloqueCreditos > p {
+	margin: 0px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.acreditados {
+	margin: 0px 2px 10px 2px;
+	padding: 2px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.acreditados > p {
+	margin: 2px;
+	padding: 2px;
+}
+
+.titulo {
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 10px;
+}
+
+.listaG {
+	margin: 2px 2px 0px 2px;
+	padding: 2px 2px 0px 2px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.listaG a {
+	font-size: 20px;
+	margin: 2px;
+	padding: 4px 20px;
+	background: #e0e0e0;
+	border-radius: 10px;
+}
+
+.carrusel-fotos {
+	display: flex;
+	justify-content: center;
+}
+
+.carrusel-fotos img, video {
+	height: 60%;
+	width: 10%;
+}
+
+.carrusel-fotos img:hover {
+	width: 100%;
+}
+
+.carrusel-fotos video:hover {
+	width: 100%;
+}
+
+blockquote { /*Este es único para Tiktok*/
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+/* Lista de las FIchas Técnicas */
+@media (max-width: 696px) {
+	.listaG {
+		display: grid;
+		justify-content: center;
+	}
+
+	.listaG a {
+		text-align: center;
+		padding: 4px 50px;
+	}
+}
+
+/* Pie de Página */
+.barraContacto {
+	margin: 8px;
+	padding: 8px;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+.contactoRedes {
+	margin: 2px 2px 0px 2px;
+	padding: 4px 4px 0px 4px; 
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@media (max-width: 454px) { 
+	.contactoRedes {
+		display: box;
+	}
+
+	.contactoRedes img {
+		height: 50px;
+	}
+}

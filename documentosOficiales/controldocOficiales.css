@@ -1,0 +1,26 @@
+.presentacion {	
+	padding: 1px 20px 1px 20px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.documentos {
+	padding: 0px 0px 20px 0px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.lista {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.lista > div {
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #cfcfcf;
+}
+
+.lista > p {
+	margin: 0;
+}
