@@ -180,8 +180,9 @@ hr {
 }
 
 .titBloqueCreditos {
-	margin: 8px 8px 0px 8px;
+	margin: 8px auto 0px auto;
 	padding: 8px;
+	width: 36%;
 	text-align: center;
 	background: #a1a1a1;
 	border-radius: 6px 6px 0px 0px;
@@ -194,8 +195,9 @@ hr {
 }
 
 .acreditados {
-	margin: 0px 8px 8px 8px;
+	margin: 0px auto 8px auto;
 	padding: 2px;
+	width: 37%;
 	text-align: center;
 	background: #cfcfcf;
 	border-radius: 0px 0px 6px 6px;
@@ -204,6 +206,31 @@ hr {
 .acreditados > p {
 	margin: 2px;
 	padding: 2px;
+}
+
+.tablaDocumentos {
+	max-width: 1216px;
+	margin: 0px auto;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 4px;
+}
+
+.tablaDocumentos a {
+	width: 140px;
+}
+
+.elemLista:hover {
+	background-color: #a1a1a1;
+}
+
+.elemLista {
+	background-color: #cfcfcf;
+	text-align: center;
+	line-height: 140px;
+	width: 140px;
+	height: 140px;
 }
 
 /* Imagenes y Videos */
@@ -240,23 +267,22 @@ hr {
 	/* Carrusel de Fotos */
 
 .carrusel-fotos {
-	padding: 0px 8px 8px 8px;
-	margin: 0px 8px 8px 8px;
-	display: flex;
-	justify-content: center;
+	width: 100%;
+	max-width: 1190px;
+	margin: 10px auto;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 4px;
 }
 
-.carrusel-fotos img, video {
-	height: 60%;
-	width: 10%;
+.carrusel-fotos img {
+	width: 100%;
+	object-fit: cover;
 }
 
 .carrusel-fotos img:hover {
-	width: 100%;
-}
-
-.carrusel-fotos video:hover {
-	width: 100%;
+	transform: scale(1.2);
 }
 
 /* Otros */
@@ -280,7 +306,7 @@ blockquote { /*Este es único para Tiktok*/
 }
 
 
-/* Lista de las FIchas Técnicas */
+/* Lista de las Fichas Técnicas */
 @media (max-width: 696px) {
 	.listaG {
 		display: grid;
