@@ -208,21 +208,16 @@ hr {
 	padding: 2px;
 }
 
-.tablaDocumentos {
-	max-width: 1216px;
-	margin: 0px auto;
-
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	gap: 4px;
+/* 212 - 247 Lista de Documentos */
+.tablaDocumentos { 
+	margin: 2px 2px 0px 2px;
+	padding: 4px 4px 0px 4px; 
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .tablaDocumentos a {
 	width: 140px;
-}
-
-.elemLista:hover {
-	background-color: #a1a1a1;
 }
 
 .elemLista {
@@ -231,6 +226,23 @@ hr {
 	line-height: 140px;
 	width: 140px;
 	height: 140px;
+}
+
+.elemLista:hover {
+	background-color: #a1a1a1;
+}
+
+@media (max-width: 1083px) {
+	.tablaDocumentos {
+		display: flow;
+		flex-direction: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.elemLista {
+		margin: 10px auto;
+	}
 }
 
 /* Imagenes y Videos */
@@ -286,37 +298,8 @@ hr {
 }
 
 /* Otros */
-.listaG {
-	margin: 2px 2px 0px 2px;
-	padding: 2px 2px 0px 2px;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.listaG a {
-	font-size: 20px;
-	margin: 2px;
-	padding: 4px 20px;
-	background: #e0e0e0;
-	border-radius: 10px;
-}
-
 blockquote { /*Este es único para Tiktok*/
 	border-radius: 10px 10px 10px 10px;
-}
-
-
-/* Lista de las Fichas Técnicas */
-@media (max-width: 696px) {
-	.listaG {
-		display: grid;
-		justify-content: center;
-	}
-
-	.listaG a {
-		text-align: center;
-		padding: 4px 50px;
-	}
 }
 
 /* Pie de Página */
