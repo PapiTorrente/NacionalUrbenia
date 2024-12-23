@@ -74,7 +74,7 @@
 	opacity: 1;
 }
 
-/* Menú para Celulares e Imagen Titulo */
+/* Menú para Celulares */
 @media (max-width: 614px){
 	.menu {
 		padding: 0px 6px 6px 6px;
@@ -107,10 +107,6 @@
 	visibility: visible;
 	opacity: 1;
 	}
-
-	.img-titulo {
-		width: 65%;
-	}
 }
 
 /* CUERPO DEL DOCUMENTO */
@@ -122,6 +118,14 @@
 .logo img {
   width: 100%;
   height: auto;
+}
+
+.img-titulo {
+	text-align: center;
+}
+
+.img-titulo img {
+	width: 40%;
 }
 	
 body {
@@ -171,6 +175,39 @@ hr {
 	background: #ffffff;
 }
 
+.articulo {
+	padding: 0px 12px;
+}
+
+.tabla {
+	padding: 0px 12px 12px 12px;
+	overflow-x: auto;
+}
+
+.cabeceraTabla, .tituloFilaTabla{
+	background-color: #a10000;
+	text-align: center;
+	padding: 8px;
+}
+
+.cabeceraTabla {
+	font-size: 22px;
+}
+
+.tituloFilaTabla {
+	width: 18%;
+	font-size: 18px;
+}
+
+.contFilaTabla {
+	justify-content: space-between;
+	padding: 8px;
+}
+
+table, th, td {
+	border: 1px solid;
+}
+
 .titulo {
 	padding:8px;
 	margin: 8px;
@@ -179,10 +216,14 @@ hr {
 	border-radius: 10px;
 }
 
+.contenedorCreditos {
+	width: 36%;
+	margin: 0px auto;
+}
+
 .titBloqueCreditos {
 	margin: 8px auto 0px auto;
 	padding: 8px;
-	width: 36%;
 	text-align: center;
 	background: #a1a1a1;
 	border-radius: 6px 6px 0px 0px;
@@ -197,7 +238,6 @@ hr {
 .acreditados {
 	margin: 0px auto 8px auto;
 	padding: 2px;
-	width: 37%;
 	text-align: center;
 	background: #cfcfcf;
 	border-radius: 0px 0px 6px 6px;
