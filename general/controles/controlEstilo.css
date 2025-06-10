@@ -1,11 +1,13 @@
 /* Menu Principal */
-.menu { /* Coloca una "burbuja" de color gris alrededor de la imagen con bordes inferiores redondeados*/
+	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
+.menu { 
 	background: #4a4a4a;
 	padding: 0px 0px 6px 0px;
 	border-radius: 0px 0px 20px 20px;
 }
 
-.navegacion ul{ /* Quita el estilo de lista a todos los elementos de esta */
+	/* Quita el estilo de lista a todos los elementos de esta */
+.navegacion ul{
 	list-style: none;
 	justify-content: space-evenly;
 }
@@ -22,7 +24,8 @@
 	display: inline-block;
 }
 
-.listaMenu > li > a { /* Agrega un rectángulo redondeado color blanco a cada item */
+	/* Agrega un rectángulo redondeado color blanco a cada item */
+.listaMenu > li > a { 
 	display: block;
 	padding: 10px 36px;
 	margin: 2px;
@@ -34,45 +37,28 @@
 	color: #CE7D35;
 }
 
-.submenuDocs {
+	/* Aspecto de los submenus */
+.subMenu {
 	position: absolute;
-	background: #f3f3f3;
-	padding: 0px 12px;
-	border-radius: 20px;
+	background: #e5e5e5;
+	margin: 2px;
+	padding: 0px 4px;
+	border-radius: 15px;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity .5s;
+	transition: opacity .6s;
 }
 
-.submenuDocs li a {
+.subMenu li a {
 	display: block;
 	padding: 8px;
 }
 
-.listaMenu li:hover .submenuDocs {
+.listaMenu li:hover .subMenu {
 	visibility: visible;
 	opacity: 1;
 }
-
-.submenuOtros {
-	position: absolute;
-	background: #f3f3f3;
-	padding: 0px 12px;
-	border-radius: 20px;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity .5s;
-}
-
-.submenuOtros li a {
-	display: block;
-	padding: 8px;
-}
-
-.listaMenu li:hover .submenuOtros {
-	visibility: visible;
-	opacity: 1;
-}
+/* Fin Menú Principal */
 
 /* Menú para Celulares */
 @media (max-width: 614px){
@@ -90,44 +76,26 @@
 		display: grid;
 	}
 	
-	.listaMenu > li > a { /* Agrega un rectángulo redondeado color blanco a cada item */
+	.listaMenu > li > a { 
 	display: grid;
 	border-radius: 10px;
 	justify-content: center;
 	}
 	
-	.listaMenu li:hover .submenuDocs {
-	position: static;
-	visibility: visible;
-	opacity: 1;
-	}
-	
-	.listaMenu li:hover .submenuOtros {
+	.listaMenu li:hover .subMenu {
 	position: static;
 	visibility: visible;
 	opacity: 1;
 	}
 }
+/* Fin Menú para Celulares */
 
-/* CUERPO DEL DOCUMENTO */
-	/* General */
+/* Cuerpo del Documento */
+	/* Otros */
 * {
 	font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
   }
-	
-.logo img {
-  width: 100%;
-  height: auto;
-}
 
-.img-titulo {
-	text-align: center;
-}
-
-.img-titulo img {
-	width: 40%;
-}
-	
 body {
 	background-image:url(../imagenes/imgFondo.jpg);
 	background-repeat:no-repeat;
@@ -143,71 +111,65 @@ hr {
 	height: 3px;
 }
 
-	/* Especifico */
+blockquote { /*Es para Tiktok*/
+	border-radius: 10px 10px 10px 10px;
+}
+	/* Fin Otros*/
 
-.presentacion {	
-	padding: 8px 20px;
-	margin: 8px;
-	border-radius: 10px;
-	background: #ffffff;
+	/* Imágenes */
+.logo img { /* Icono pestaña del navegador */
+  width: 100%;
+  height: auto;
 }
 
-.acerca {
-	padding: 8px;
-	margin: 8px;
-	border-radius: 10px;
-	background: #e0e0e0;
-}
-
-.acerca h3 {
-	margin: 16px;
-}
-
-.acerca p {
-	margin: 16px;
-}
-
-/* Elementos Genéricos */
-.contGeneral {
-	padding: 8px;
-	margin: 8px;
-	border-radius: 10px;
-	background: #ffffff;
-}
-
-.articulo {
-	padding: 0px 12px;
-}
-
-.tabla {
-	padding: 0px 12px 12px 12px;
-	overflow-x: auto;
-}
-
-.cabeceraTabla, .tituloFilaTabla{
-	background-color: #a10000;
+.img-titulo { /* Imagen debajo del menú y encima del cuerpo de la página */
 	text-align: center;
+}
+
+.img-titulo img {
+	width: 40%;
+}
+
+.imgGenerica {
+	width: 150px;
+}
+
+		/* Presidencia */
+.foto {
+	margin: 8px 8px 1px 8px;
 	padding: 8px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 6px 6px 0px 0px;
 }
 
-.cabeceraTabla {
-	font-size: 22px;
+.foto img {
+	width: 48%;
 }
 
-.tituloFilaTabla {
-	width: 18%;
-	font-size: 18px;
+		/* Carrusel de Fotos */
+.carrusel-fotos {
+	width: 100%;
+	max-width: 1190px;
+	margin: 10px auto;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 4px;
 }
 
-.contFilaTabla {
-	justify-content: space-between;
-	padding: 8px;
+.carrusel-fotos img {
+	width: 100%;
+	object-fit: cover;
 }
 
-table, th, td {
-	border: 1px solid;
+.carrusel-fotos img:hover {
+	transform: scale(1.2);
 }
-
+		/* Fin Carrusel de Fotos */
+	/* Fin Imagenes */
+	
+	/* Bloques de Texto */
 .titulo {
 	padding:8px;
 	margin: 8px;
@@ -216,7 +178,32 @@ table, th, td {
 	border-radius: 10px;
 }
 
-.contenedorCreditos {
+.presentacion {	
+	padding: 8px 20px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.contGeneral { /* Diferente de la presentación por el pading para el texto. Este no lo requiere */
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.bloqueGrisClaro {
+	padding: 8px 16px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #e0e0e0;
+}
+
+.bloqueGrisClaro h3 p {
+	margin: 16px;
+}
+
+.bloqueCreditos {
 	width: 36%;
 	margin: 0px auto;
 }
@@ -248,19 +235,30 @@ table, th, td {
 	padding: 2px;
 }
 
-/* 212 - 247 Lista de Documentos */
-.tablaDocumentos { 
+.fila {
+	padding: 4px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.columna { /* Originalmente es para la página 'enlaces' */ 
+	margin-left: 10px;
+	display: block;
+}
+
+.filaDeDocumentos { 
 	margin: 2px 2px 0px 2px;
 	padding: 4px 4px 0px 4px; 
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.tablaDocumentos a {
+.filaDeDocumentos a {
 	width: 140px;
 }
 
-.elemLista {
+.elemFila {
 	background-color: #cfcfcf;
 	text-align: center;
 	line-height: 140px;
@@ -268,34 +266,24 @@ table, th, td {
 	height: 140px;
 }
 
-.elemLista:hover {
+.elemFila:hover {
 	background-color: #a1a1a1;
 }
 
 @media (max-width: 1083px) {
-	.tablaDocumentos {
+	.filaDeDocumentos {
 		display: flow;
 		flex-direction: none;
 		margin: 0px;
 		padding: 0px;
 	}
 
-	.elemLista {
+	.elemFila {
 		margin: 10px auto;
 	}
 }
 
-/* Imagenes y Videos */
-	/* Presidencia */
-.foto {
-	margin: 8px 8px 1px 8px;
-	padding: 8px;
-	text-align: center;
-	background: #cfcfcf;
-	border-radius: 6px 6px 0px 0px;
-}
-
-.infoFecha {
+.infoFecha { /* Usado junto a .foto porque es para la presidencia */
 	margin: 1px 8px 8px 8px;
 	padding: 8px;
 	text-align: center;
@@ -315,32 +303,39 @@ table, th, td {
 	background: #cfcfcf;
 	border-radius: 6px;
 }
+	/* Fin Bloques de Texto */
 
-	/* Carrusel de Fotos */
-
-.carrusel-fotos {
-	width: 100%;
-	max-width: 1190px;
-	margin: 10px auto;
-
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 4px;
+	/* Tabla */
+.tabla {
+	padding: 12px;
+	overflow-x: auto;
 }
 
-.carrusel-fotos img {
-	width: 100%;
-	object-fit: cover;
+.tituloFilaTabla{
+	background-color: #e0e0e0;
+	text-align: center;
+	padding: 8px;
 }
 
-.carrusel-fotos img:hover {
-	transform: scale(1.2);
+.cabeceraTabla {
+	font-size: 22px;
 }
 
-/* Otros */
-blockquote { /*Este es único para Tiktok*/
-	border-radius: 10px 10px 10px 10px;
+.tituloFilaTabla {
+	width: 18%;
+	font-size: 18px;
 }
+
+.contFilaTabla {
+	justify-content: space-between;
+	padding: 8px;
+}
+
+table, th, td {
+	border: 1px solid;
+}
+	/* Fin Tabla */
+/* Fin Cuerpo del Documento */
 
 /* Pie de Página */
 .barraContacto {
