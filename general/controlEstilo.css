@@ -193,7 +193,7 @@ blockquote { /*Es para Tiktok*/
 }
 
 .bloqueGrisClaro {
-	padding: 8px 16px;
+	padding: 16px;
 	margin: 8px;
 	border-radius: 10px;
 	background: #e0e0e0;
@@ -245,6 +245,10 @@ blockquote { /*Es para Tiktok*/
 .columna { /* Originalmente es para la página 'enlaces' */ 
 	margin-left: 10px;
 	display: block;
+}
+
+.columna p {
+	text-align: justify;
 }
 
 .filaDeDocumentos { 
@@ -350,6 +354,24 @@ table, th, td {
 	padding: 4px 4px 0px 4px; 
 	display: flex;
 	justify-content: space-evenly;
+}
+
+@media (max-width: 554px) {
+	.fila {
+		display: grid;
+	}
+
+	.fila a {
+		justify-self: center;
+	}
+
+	.imgGenerica {
+		width: 180px;
+	}
+
+	.columna {
+		margin: 0px;
+	}
 }
 
 @media (max-width: 454px) { 
