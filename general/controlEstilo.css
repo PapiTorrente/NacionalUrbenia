@@ -108,7 +108,9 @@ a {
 }
 	
 hr {
-	height: 3px;
+	background-color: black;
+	border: 4px solid black;
+	border-radius: 3px;
 }
 
 blockquote { /*Es para Tiktok*/
@@ -177,6 +179,11 @@ blockquote { /*Es para Tiktok*/
 	text-align: center;
 	background: #a1a1a1;
 	border-radius: 10px;
+}
+
+.titulo a {
+	margin: 0px;
+	font-size: 22px;
 }
 
 .presentacion {	
