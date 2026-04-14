@@ -343,44 +343,6 @@ table, th, td {
 /* Fin Cuerpo del Documento */
 
 /* Pie de Página */
-.barraContacto {
-	margin: 8px;
-	padding: 8px;
-	background: #ffffff;
-	border-radius: 10px;
-}
-
-.contactoRedes {
-	margin: 2px 2px 0px 2px;
-	padding: 4px 4px 0px 4px; 
-	display: flex;
-	justify-content: space-evenly;
-}
-
-@media (max-width: 554px) {
-	.fila {
-		display: grid;
-	}
-
-	.fila a {
-		justify-self: center;
-	}
-
-	.imgGenerica {
-		width: 180px;
-	}
-
-	.columna {
-		margin: 0px;
-	}
-}
-
-@media (max-width: 454px) { 
-	.contactoRedes {
-		display: box;
-	}
-
-	.contactoRedes img {
-		height: 50px;
-	}
+h4 p {
+	color:white;
 }
