@@ -82,7 +82,7 @@
 }
 /* Fin Menú Principal */
 
-/* Menú para Celulares */
+/* Menú y Contenido para Celulares */
 @media (max-width: 789px){
 	.navegacion {
 		display: flex;
@@ -138,15 +138,15 @@
 	}
 	
 	.listaMenu > li > a { 
-	display: grid;
-	border-radius: 10px;
-	justify-content: center;
+		display: grid;
+		border-radius: 10px;
+		justify-content: center;
 	}
 	
 	.listaMenu li:hover .subMenu {
-	position: static;
-	visibility: visible;
-	opacity: 1;
+		position: static;
+		visibility: visible;
+		opacity: 1;
 	}
 }
 /* Fin Menú para Celulares */
@@ -187,10 +187,17 @@ blockquote { /*Es para Tiktok*/
 
 .img-titulo { /* Imagen debajo del menú y encima del cuerpo de la página */
 	text-align: center;
+	margin-top: 8px;
 }
 
 .img-titulo img {
-	width: 40%;
+	width: 50%;
+}
+
+@media (max-width: 789px){
+	.img-titulo img {
+		width: 70%;
+	}
 }
 
 .imgGenerica {
