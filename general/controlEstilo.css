@@ -18,9 +18,8 @@
 }
 
 	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
-.menu { 
+.menu {
 	background: #4a4a4a;
-	padding: 2px;
 	border-radius: 0px 0px 20px 20px;
 }
 
