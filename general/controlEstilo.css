@@ -1,13 +1,36 @@
 /* Menu Principal */
+	/* Oculta el menú hamburguesa en pantallas grandes */
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.menu-hamburguesa span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
 	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
 .menu { 
 	background: #4a4a4a;
-	padding: 0px 0px 6px 0px;
+	padding: 2px;
 	border-radius: 0px 0px 20px 20px;
+}
+
+.navegacion {
+	padding: 0px 0px 2px 0px;
 }
 
 	/* Quita el estilo de lista a todos los elementos de esta */
 .navegacion ul{
+	padding: 0px;
 	list-style: none;
 	justify-content: space-evenly;
 }
@@ -61,19 +84,58 @@
 /* Fin Menú Principal */
 
 /* Menú para Celulares */
-@media (max-width: 614px){
-	.menu {
-		padding: 0px 6px 6px 6px;
+@media (max-width: 789px){
+	.navegacion {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.navegacion.modificado {
+		padding: 0px;
+	}
+
+	.menu-hamburguesa {
+        display: flex; /* Mostrar botón del menú hamburguesa */
+		margin: 0 auto; /* Lo alinea al centro */
+		padding: 10px;
+		border-radius: 15px;
+		background: #ffffff;
+		transition: padding 0.3s ease, width 0.3s ease; /* Transición a .presionado no disruptivo */
+    	width: auto;
+    }
+
+	.menu-hamburguesa.presionado {
+		padding: 10px 60px;
 	}
 
 	.listaMenu {
-		display:flow;
-		flex-direction: none;
-	}
+        display: flex;
+        flex-direction: column;
+
+		/* Aparición de elementos no disruptivamente */
+		max-height: 0; /* Estado inicial sin altura */
+		overflow: hidden; /* Corta el contenido que sobresale */
+		transition: all 0.5s ease;
+    }
+
+	.listaMenu.activo {
+        max-height: 500px; /* Estado secundario con altura suficiente para mostrar el contenido */
+    	opacity: 1;
+    	padding: 2px; /* Espaciado suave */
+    }
 	
 	.listaMenu > li {
+		/* Elementos internos entran con retraso */
+		opacity: 0;
+    	transition: opacity 0.6s ease;
+
 		position: static;
 		display: grid;
+	}
+
+	.listaMenu.activo > li {
+		opacity: 1;
 	}
 	
 	.listaMenu > li > a { 
