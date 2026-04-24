@@ -1,9 +1,13 @@
+---
+layout: default
+---
+
 <!DOCTYPE HTML>
 <HTML>
 
 <HEAD>
-<link rel="icon" href="general/imagenes/URBIcono.png">
-<link rel="stylesheet" href="general/controlEstilo.css">
+<link rel="icon" href="{{ site.baseurl }}/general/imagenes/URBIcono.png">
+<link rel="stylesheet" href="{{ site.baseurl }}/general/controlEstilo.css">
 
 <meta name="p:domain_verify" content="bf7ad6fc3c1f8ad900d9dedd38d8faa8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,44 +23,9 @@
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-<header class="menu">
-	<div class="logo">	
-		<a href="https://papitorrente.github.io/NacionalUrbenia/">
-			<img src="general/imagenes/URBLargo.png">
-		</a>
-	</div>
-
-	<nav class="navegacion">
-		<button class="menu-hamburguesa" aria-label="Abrir menú">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-
-		<ul class="listaMenu">
-			<li> <a href="https://nacionalurbenia.blogspot.com"> Blog </a> </li>
-			<li> <a href="#"> Gobierno </a> 
-				<ul class="subMenu">
-					<li> <a id="Presidencia" href="gobierno/presidencia/presidencia.html"> Presidencia </a>	</li>
-					<li> <a id="Historia_O" href="descargas/Historia_O.pdf" download="Historia_O.pdf"> Historia de Otwór </a> </li>
-					<li> <a id="Historia_U" href="descargas/Historia_U.pdf" download="Historia_U.pdf"> Historia de Urbenia </a> </li>
-					<li> <a id="Torrentismo" href="descargas/Torrentismo.pdf" download="Torrentismo.pdf"> El Torrentismo </a> </li>		
-				</ul>
-			</li>
-			<li> <a href="enlaces.html"> Enlaces </a> </li>
-			<li> <a href="creditos.html"> Créditos </a> </li>
-			<li> <a href="#"> Redes Sociales </a>
-				<ul class="subMenu">
-					<li> <a href="https://www.youtube.com/channel/UC2jXEsGdc_t1EomCh_ncsGg"> Canal de YouTube </a> </li>
-					<li> <a href="https://www.youtube.com/channel/UChji433QJvTFzR3xRjqeUSw/"> Canal de YouTube de Torrente </a> </li>
-					<li> <a href="https://www.instagram.com/nacionalurbenia/"> Perfil de Instagram </a> </li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-</header>
+{% include menu.html %}
 	
-<div class="img-titulo"><img src="general/imagenes/URBtitulo.png"></div>
+<div class="img-titulo"><img src="{{ site.baseurl }}/general/imagenes/URBtitulo.png"></div>
 
 <div class="presentacion">
 	<p>
@@ -151,15 +120,15 @@
 <div class="contGeneral">
 	<div class="titulo"> <a href="#Fotos_del_pais"> Fotos del país </a> </div>
 	<div class="carrusel-fotos">
-		<img src="fotosCiudad/otwor.jpg">
-		<img src="fotosCiudad/otwor2.jpg">
-		<img src="fotosCiudad/otwor3.jpg">
-		<img src="fotosCiudad/centro.jpg">
-		<img src="fotosCiudad/centro2.jpg">
-		<img src="fotosCiudad/centro3.jpg">
-		<img src="fotosCiudad/centro4.jpg">
-		<img src="fotosCiudad/centro5.jpg">
-		<img src="fotosCiudad/centro6.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/otwor.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/otwor2.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/otwor3.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro2.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro3.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro4.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro5.jpg">
+		<img src="{{ site.baseurl }}/fotosCiudad/centro6.jpg">
 	</div>
 </div>
 
@@ -169,7 +138,7 @@
 		 
 <h4> <p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p> </h4>
 
-<script src="general/menu.js"></script>
+<script src="{{ site.baseurl }}/general/menu.js"></script>
 
 </BODY>
 
