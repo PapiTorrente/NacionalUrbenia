@@ -6,193 +6,332 @@ layout: none
 <HTML>
 
 <HEAD>
-<link rel="icon" href="{{ site.baseurl }}/general/imagenes/URBIcono.png">
-<link rel="stylesheet" href="{{ site.baseurl }}/general/controlEstilo.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<META http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
 
-<TITLE> Urbenia | Presidencia de Urbenia </TITLE>
+	<META name="keywords" content="Urbenia, minecraft, indie-web, homebrew">
+	<META name="author" content="Torrente">
+	<META name="description" content="NacionalUrbenia es la página web de la Magnífica República de Urbenia.">
 
-<META name="description" content="Gobierno de Urbenia">
-<META name="keywords" content="Gobierno de Urbenia">
+	<link rel="icon" href="{{ '/imagenes/logos/URBIcono.png' | relative_url}}s">
+	<link rel="stylesheet" href="{{ site.baseurl }}/general/estiloGeneral.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/general/estiloMenu.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/general/estilosReutilizables.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/general/controlEstilo.css">
+
+	<TITLE> Urbenia | Presidencia </TITLE>
 
 </HEAD>
 
-<BODY style="background-color:#ADADAD;" style="text-align: justify"> 
+<BODY>
 
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	{% include menu.html %}
 
-{% include menu.html %}
+	<div class="img-titulo"><img src="{{ '/imagenes/logos/URBtitulo.png' | relative_url }}"></div>
 
-<div class="img-titulo"><img src="{{ '/general/imagenes/URBtitulo.png' | relative_url }}"></div>
+	<div class="presentacion">
+		<p>
+			El Gobierno de la Magnífica República de Urbenia presenta este espacio para la preservación de la historia y
+			memoria de nuestro país,
+			puesto que el tiempo pasa rápido y es importante recordar que no ha habido una sola Urbenia ni se ha
+			mantenido igual a lo largo de 6
+			extensos años en los que ha habido cambios de época, de presidentes y presidentas o de mundos para
+			aprovechar las novedades que han
+			traído las actualizaciones de Minecraft como la generación de terreno, pero más importante, mejoras.
+		</p>
+		<p>
+			Por esta razón, este espacio está dedicado a nuestros presidentes y presidentas que tomaron poder al cambiar
+			de época, cambios los
+			cuales fueron provocados por una nueva generación de terreno o la necesidad de reinventar los países
+			-particularmente durante el periodo
+			en que Urbenia coexistió junto a otras naciones en el servidor de Donovan- y probar con nuevos terrenos,
+			nuevos métodos de construcción,
+			entre otras.
+		</p>
+		<p>
+			Además, se incluye la fecha en la que ocurrió el cambio de época y presidencia para demostrar que no todo
+			cambio tomó tiempo ni fue
+			repentino; fue un proceso mixto en el que el paso de los años jugó un rol importante, ayudando a que las
+			ideas florecieran de manera
+			natural; a veces hubo más y a veces menos.
+		</p>
+		<p>
+			Esta página procurará mantenerse actualizada siempre y cuando hayan nuevas épocas de Urbenia, ya sea en
+			Minecraft o en algún otro medio.
+		</p>
+	</div>
 
-<div class="presentacion"> 
-			<p>
-			 	El Gobierno de la Magnífica República de Urbenia presenta este espacio
-			 	a manera de galeria para la consulta de quienes alguna vez fueron líderes
-			 	de nuestra hermosa nación.
-			</p>
-			<p>
-			 	La lista de presidentes muestra el nombre del presidente, época de gobierno
-			 	y un recuento de actividades durante su mandato, sin embargo en un futuro 
-			 	si irán colocando las fechas correspondientes en vez de la época.
-			</p>
-			<p>
-				La lista no es muy larga pero si sus actividades, debido al largo tiempo que
-				gobernó cada uno, contribuyendo al crecimiento del país y a la prosperidad
-				para generaciones futuras.
-			</p>
-</div>
-
-<div class="contGeneral">
-	<div class="foto"> <img src="fotosPresidencia/PCarlos.png"> </div>
-	<div class="infoFecha"> <p justify="center"> Carlos Yael de Castilla | Época 1 </p> </div>
+	<div class="contGeneral">
+		<div class="foto"> <img src="{{ '/imagenes/fotosPresidentes/PCarlos.png' | relative_url }}"> </div>
+		<div class="infoFecha">
+			<p> Carlos Yael de Castilla | Época 1 | 21 de diciembre de 2019 </p>
+		</div>
 		<div class="infoPresidencia">
-			<p> 
-				El gobierno de Carlos de Castilla comenzó cuando los humanos llegaron a Otwór, trabajó
-				siempre pensando en dejarle al siguiente gobierno una Urbenia de bases sólidas y de esta
-				manera creó la constitución de derechos, el primer asentamiento civil y una forma de 
-				gobernar basada en el pueblo.
-			</p>
-			<p> 
-				Grandes fueron sus contribuciones al país y por ello es necesario enlistarlas:
+			<p>
+				El gobierno de Carlos de Castilla comenzó cuando la nave que usaron los humanos para escapar del planeta
+				tierra aterrizó en el
+				planeta de Otwór y se caracterizó por construir un país con bases sólidas, teniendo en mente siempre la
+				siguiente administración y
+				el poder e importante del pueblo.
 			</p>
 			<p>
-				<ul>
-					<li> La anexión de todas las razas de Otwór. </li>
-					<li> La creación de la primera linea de metro. </li>
-					<li> La instauración de espacios públicos para el pueblo, como cines, plazas y parques. </li>
-					<li> La primera demarcación territorial. </li>
-					<li> La primera estación de radio. </li>
-					<li> La conceción de un espacio exclusivo para las fuerzas armadas del país. </li>
-					<li> El crecimiento exponencial de la economía, basado en la exportación de recursos naturales y alimenticios a otros paises, provocando la resistencia ante bloqueos comerciales. </li>
-					<li> La firma de diversos acuerdos de hermandad con el Sacro Imperio de Arnus y el Gran Imperio Romano. </li>
-				</ul>
+				El primer asentamiento, considerado pueblo y siendo el prototipo del país que conocemos hoy en día,
+				comenzó en la frontera oeste de
+				Arnus, país eslavo liderado por Donovan que, para cuando Urbenia fue fundada, este ya era un país
+				enorme.
 			</p>
 			<p>
-				Sin embargo, no todo fue bueno, puesto que durante su mandato se libró la gran batalla de las razas, batalla en la que se peleaba contra el pueblo Cígo quienes estuvieron a punto de exterminar a todo ser
-				viviente y dominar las tierras hasta que la unión de las seis razas nativas de Otwór y el pueblo Urbeniano 
-				formaron alianza, logrando contrarrestar la fuerza cíga y así, ganando.
+				Las contibuciones de Carlos fueron significativas y se presentan en orden:
+			</p>
+			<ul>
+				<li> Un sistema primitivo de transporte público basado en rieles, antes de ser considerado "metro". Sólo
+					se construyó una línea de 3 estaciones. </li>
+				<li> Creación de una plaza pública, un cine y un parque. </li>
+				<li> El crecimiento de la economía basado en la exportación de recursos naturales y alimenticios a otros
+					países, provocando independencia y resistencia a bloqueos comerciales. </li>
+				<li> La concesión de un espacio exclusivo para las fuerzas armadas del país. </li>
+				<li> Firma de diversos acuerdos de hermandad con el Sacro Imperio de Arnus y el Gran Imperio Romano.
+				</li>
+				<li> Derivado de lo anterior, la construcción de embajadas Urbenianas en el Sacro Imperio de Arnus y el
+					Gran Imperio Romano. </li>
+				<li> La "Guerra de las Razas" en la que lucharon los pueblos originarios de Otwór contra el también
+					pueblo originario de los Tepoztlacah. </li>
+				<li> Posterior a la guerra, tratados de paz y posterior anexión de las razas de Otwór -tanto cultural
+					como geográficamente-. </li>
+				<li> La primera estación de radio. </li>
+			</ul>
+			<p>
+				Ahondando más en la "Guerra de las Razas" hemos de decir que el conflicto comenzó con el pueblo de los
+				Tepoztlacah (Gente de
+				metal/hierro) quienes querían ser reconocidos como la "raza superior", desembocando en la invasión y
+				dominación de las tierras
+				pertenecientes a otros pueblos y la casi exterminación de todo ser viviente en aquellas zonas.
+
+				Sin embargo, los pueblos originarios no iban a permitirlo puesto que muchos años atrás, un conflicto
+				similar había causado la caida
+				del reino de Otwór y la separación de su pueblo que dió origen a esos mismo pueblos y que una vez más,
+				luchaban entre sí.
 			</p>
 			<p>
-				Hubieron bajas significativas y el pueblo Urbeniano perdió más de la mitad de su población.
+				Dicha resistencia terminó en la unión y la posterior alianza con el naciente pueblo de Urbenia, logrando
+				contrarrestar la fuerza
+				enemiga y así, ganando; sin embargo, las bajas fueron significativas tanto como para el grupo defensor
+				cómo para el ofensor.
 			</p>
 			<p>
-				Adicionalmente, entre los aportes neutrales del presidente se incluye la creación indirecta de "El Calabozo de Torrente", grupo que actua bajo la ley pero con el permiso del gobierno para tomar justicia
-				propia y ayudar desinteresadamente a quienes lo necesiten.
+				Se perdió la mitad de la población por cada pueblo pero se ganó la unión total, la mezcla de culturas,
+				tradiciones, gastronomía y
+				conocimiento, haciendo de Urbenia un país megadiverso.
+			</p>
+			<p>
+				Por otro lado, entre los aportes no intencionales del presidente se incluye la creación de "El Calabozo
+				de Torrente", grupo
+				independiente político que actua sobre la ley pero con la protección del gobierno para tomar justicia
+				propia y ayudar
+				desinteresadamente a quienes lo necesiten.
+			</p>
+			<p>
+				Otro de los aportes no intencionales fue la restauración del crucero espacial en el que llegaron los
+				humanos. Dicha restauración fue dirigida y ejecutada por las propias razas originarias de Otwór, hoy de
+				Urbenia.
 			</p>
 		</div>
-</div>
-    
-<div class="contGeneral">
-	<div class="foto"> <img src="fotosPresidencia/PTorrente.png"> </div>
-	<div class="infoFecha"> <p> Torrente Laekenois | Época 2 </p> </div>
+	</div>
+
+	<div class="contGeneral">
+		<div class="foto"> <img src="{{ '/imagenes/fotosPresidentes/PTorrente.png' | relative_url }}"> </div>
+		<div class="infoFecha">
+			<p> Torrente Laekenois | Época 2 | 7 de abril de 2020 </p>
+		</div>
 		<div class="infoPresidencia">
 			<p>
-				Continuando los principios del presidente Carlos de Castilla y con las bases de una Urbenia sólida, el presidente Torrente asumió cargos a fin de año y comenzó actividades el año entrante, siendo la primera de ellas el nombramiento oficial del país, quedando ahora como "Magnífica República de Urbenia".
-			</p>
-			<p> 
-				Sus hitos se encuentran enlistados a continuación:
-			</p>
-			<p>
-				<ul>
-					<li> Quintuplicar el territorio. </li>
-					<li> La reación de los 42 estados que comprenden al país. </li>
-					<li> La ley de energías limpias. </li>
-					<li> La construcción de la planta nuclear en el estado de Frye. </li>
-					<li> La sustitución de las farolas antiguas por farolas de luz solar. </li>
-					<li> El reposicionamiento de la base de las fuerzas armadas a Abaddon, un estado completo. </li>
-					<li> La creación del primer túnel submarino que conecta Vicvalmar con el resto del continente. </li>
-					<li> La creación de la radio SKR. </li>
-					<li> La instauración del pensamiento Torrentista, basado en el humanismo. </li>
-					<li> La fundación del primer templo/iglesia Torrentista, de aspecto gótico. </li>
-					<li> La creación de la Biblia Torrentista, libro que narraba, desde la perspectiva de la Magnífica República de Urbenia, el Gran Imperio Romano, el Sacro Imperio de Arnus y el Imperio Galáctico Británico, los acontecimientos místicos de la creación del Torrentismo que llevaron a la guerra. </li>
-					<li> El decreto de educación pública y gratuita para todo el país. </li>
-					<li> La fundación de la Universidad Nacional de Urbenia. </li>
-					<li> La fundación de la Escuela Nacional de Mágia Natural de Urbenia. </li>
-					<li> El reposicionamiento de la capital, tomando a Austin como sede de gobierno. </li>
-					<li> La creación del FOMONA (ahora MINIDANCIA). </li>
-					<li> La creación del Palacio Nacional de las Bellas Artes. </li>
-					<li> Reformas a los derechos humanos de los criminales. </li>
-					<li> La creación de la primer cárcel del país. </li>
-				</ul>
+				Después de que el país recibiera telecomunicaciones y que el presidente Carlos de Castilla cumpliera su
+				palabra de un pueblo con
+				base sólida, dejo su cargo el 6 de abril de 2020 y le entregó el naciente pueblo a Torrente Laekenois.
 			</p>
 			<p>
-				Pero, como en el gobierno anterior, el presidente Torrente libró la batalla contra Braxter, dónde Urbenia perdió ,y la batalla contra Arnus, dónde Urbenia ganó y se apoderó de una porción considerable del territorio de Arnus, causando así que el rey Ivan "El terrible" asesinara a su hijo.
+				Las contribuciones de Torrente se presentan en orden:
 			</p>
+			<ul>
+				<li> La creación de los 30 estados que componen al país después de la anexión de los pueblos originarios
+					y sus tierras. -La lista de nombres comenzó el 23 de enero, para el 22 de septiembre ya habían 24
+					nombres y poco a poco se agregaron más.-</li>
+				<li> Reposicionamiento de la capital en el estado de Austin. </li>
+				<li> La creación del Palacio Nacional de las Bellas Artes. </li>
+				<li> Firma de documentos de hermandad con el Gran Imperio Romano que culminó con el obsequio de "Los 4
+					Vigilantes" en la plaza roja. </li>
+				<li> Firma de documentos de hermandad con el Sacro Imprerio de Arnus en la que se presenció la
+					inauguración de "La Gran San Petersburgo", celebración culminada con la colocación de la bandera
+					Urbeniana en el puerto marítimo que conecta Arnus y Urbenia. </li>
+				<li> Fundación de los estados "Vicvalmar" y "Hooligan" en una isla de terracota ubicada al norte. </li>
+				<li> Inauguración del "Tunel Interoceánico" que conecta los estados "Vicvalmar" y "Hooligan" con el
+					continente. </li>
+				<li> Fundación del estado "Abaddon", el cuál fue asignado en su totalidad para el uso de las fuerzas
+					armadas como cuartel principal y campo de entrenamiento, abandonando aquella base miliar primitiva.
+				</li>
+				<li> Promoción de la vida en Austin, construyendo viviendas. </li>
+				<li> Fundación del estado "Frye" en honor a la guerrera de la "Guerra de las Razas" y heredera al trono
+					del reino de Otwór. Dicho estado en su totalidad sería la sede de la planta nuclear que alimenta
+					todo el país. </li>
+				<li> Promulgación de la ley de energías limpias. </li>
+				<li> Fundación de los estados de "Lerya", -frontera con Egipto y posteriormente Roma-, "Cerna",
+					"Trinidad" y "Khrian". </li>
+				<li> Inauguración del primer puerto marítimo en el estado de "Cerna". </li>
+				<li> Dado el crecimiento de población, el país entero experimentó la llegada de fábricas y empresas,
+					empezando por los estados de "Lerya" y "Austin". </li>
+				<li> La creación del FOMONA -ahora MINIDANCIA-. </li>
+				<li> Después de la crucifixión del presidente y las guerras santas, se construyó la primera iglesia
+					Torrentista de estilo gótico. </li>
+				<li> El decreto de educación pública y gratuita para todo el país. </li>
+				<li> La fundación de la Universidad Nacional de Urbenia. </li>
+				<li> Dada la fundación de diversos estados, se construyeron carreteras que conectaron a todo el país.
+				</li>
+			</ul>
+
 			<p>
-				Tambien cedió una parte de su territorio en el desierto a Egipto, pero después del colapso de esta nación el territorio fue recuperado por el Gran Imperio Romano y por consiguiente se debió ceder a este.
+				Adicionalmente, hubo dos hitos importantes durante la administración de Torrente, las cuales se
+				mencionan a continuación.
 			</p>
+			<ul>
+				<li>
+					Una nación naciente, llamada Egipto, se asentó en territorio Urbeniano y no fue hasta la creación
+					del estado de "Lerya" que el gobierno se dio cuenta. El Gran Imperio Romano intercedió, así que ese
+					territorio le fue cedido a Egipto aunque no por mucho tiempo puesto que colapsó y terminó siendo
+					parte de Roma.
+				</li>
+				<li> El 6 de junio de 2020 Torrente fue crucificado por el Gran Imperio Romano y resusitó esa misma
+					tarde. Posteriormente, el presidente escribió un manuscrito junto a Christopher, -líder del Gran
+					Imperio Romano-, Josh, -líder del Imperio Galáctico Británico-, e Iván (Donovan), -líder del Sacro
+					Imperio de Arnus-, en el que se narra la creación del Torrentismo, -religión basada en el
+					humanismo-, la creación del Torrentismo Ortodoxo y el Torrentismo Católico, así como las tensiones
+					entre ambos grupos que finalmente los llevaron a la guerra. </li>
+			</ul>
 			<p>
-				Algunas personas afirman que se parece al presidente Carlos de Castilla, pero no reconocemos esa información.
+				Por otro lado, esta época también estuvo marcada por dos guerras, las cuales se enlistan a continuación:
+			</p>
+			<ul>
+				<li>
+					Guerra contra Baxter: Perdida. La nación "Baxter" declaró la guerra a Urbenia y el encuentro sucedió
+					en Abaddon, cuyos edificios
+					de la defensa nacional resultaron gravemente dañados.
+				</li>
+				<li>
+					Guerra contra Arnus: Ganada. El 25 de abril del 2020 al medio día el Sacro Imperio de Arnus le
+					declaró la guerra a Urbenia. Este evento se conoció cómo "La Batalla del Río Volga" y tras la
+					victoria, Urbenia se apoderó de una
+					porción del territorio "enemigo". Esto causó la cólera del rey Iván "El terrible" quien asesinó a su
+					propio hijo.
+				</li>
+			</ul>
+			<p>
+				Como nota al pie, algunas personas han mencionado el parecido físico con el presidente Carlos de
+				Castilla, pero no reconocemos esa
+				información.
 			</p>
 		</div>
-</div>
+	</div>
 
-<div class="contGeneral">
-	<div class="foto"> <img src="fotosPresidencia/PPaty.png"> </div>
-	<div class="infoFecha"> <p> Paty Arez | Época 3 <p> </div>
+	<div class="contGeneral">
+		<div class="foto"> <img src="{{ '/imagenes/fotosPresidentes/PPaty.png' | relative_url }}"> </div>
+		<div class="infoFecha">
+			<p> Paty Arez | Época 3 | 2 de julio de 2020 </p>
+		</div>
 		<div class="infoPresidencia">
 			<p>
-				El gobierno de la presidenta Paty Arez se marcó el primero de enero con la iniciación de la contrucción de los dos ministerios faltantes, como lo son:
+				El gobierno de la presidenta Paty Arez comenzó la tarde del 2 de julio del 2020, siendo marcado por la
+				adopción total
+				de la religión Torrentista, la consolidación de las leyes educativas y la promulgación de leyes sociales
+				rígidas, sin embargo, sus hitos van más allá de los anteriormente mencionados como se muestra a
+				continuación:
+			</p>
+			<ul>
+				<li> Construcción de una Catedral Torrentista, derrumbando primero la antigua iglesia. </li>
+				<li> Creación del Senado de la República en la que se reunen los representantes de todo el pueblo
+					Urbeniano, incluyendo a las razas originarias. </li>
+				<li> Construcción del primer portal al Inframundo. </li>
+				<li> Inauguración de más planteles de licenciatura, bachillerato, superior y básica pertenecientes a la
+					UNU. </li>
+				<li> Inauguración del primer sistema de transporte basado en "teletransportación por chimenea". </li>
+				<li> Construcción del primer Hospital General del país. </li>
+				<li> Construcción del Ministerio de Educación. </li>
+				<li> Construcción del Ministerio de Transporte. </li>
+				<li> Construcción del Ministerio de Turismo. </li>
+				<li> Construcción del Ministerio de Cultura. </li>
+				<li> Desborde económico que permitió aún más empresas privadas en "Austin" y la construcción de
+					rascacielos. </li>
+				<li> La creación de la Biblioteca Nacional. </li>
+				<li> Inauguración del primer sistema postal y de correos. </li>
+				<li> La unión de Urbenia a "La Coalición", una organización de naciones unidas. </li>
+				<li> Destinación de bienes monetarios a la ciencia que permitieron el desarrollo y uso de las
+					"Carreteras Sub-Espacial" como medio de transporte. La gente suele hacerse 5 KM en 15 segundos.</li>
+				<li> Remodelación del Palacio Nacional de las Bellas Artes. </li>
+				<li> La fundación de la Escuela Nacional de Magia Natural de Urbenia en el estado de Hooligan. </li>
+				<li> La creación del tren para estudiantes de la Escuela Nacional de Magia Natural. </li>
+				<li> La instalación de cámaras de video-seguridad en cada calle de Urbenia. </li>
+				<li> Reformas a los derechos humanos de los criminales. </li>
+				<li> Inauguración de la primera cárcel del país. </li>
+				<li> Renombramiento del país, pasando de "Urbenia" a "Magnífica República de Urbenia". </li>
+			</ul>
+			<p>
+				Así mismo, la presidenta Paty inauguró los ministerios, acomodados en órden cronológico:
+			</p>
+			<ul>
+				<li> Ministerio de la Verdad, encargado del sistema judicial y la administración de cárceles y
+					tribunales de justicia.</li>
+				<li> El ministerio de la Paz, encargado de las relaciones internacionales. </li>
+				<li> El ministerio del Amor, encargado del registro civil, censos de población, entre otros registros y
+					documentos importantes. </li>
+			</ul>
+			<p>
+				Quedando de esta forma los cuatro pilares del sistema Urbeniano, encabezados por el Ministerio de la
+				Abundancia.
 			</p>
 			<p>
-				<ul>
-					<li> El ministerio de la Paz, encargado de las relaciones internacionales. </li>
-					<li> El ministerio del amor, encargado del registro civil y censos de población</li>
-				</ul>
-			</p>
-			<p>
-				Puesto que en el gobierno anterior del presidente Torrente se construyó el ministerio de la verdad (encargado del sistema judicial) y el ministerio de la abundancia (encargado de la economía, así como producción de bienes y servicios).
-			</p>
-			<p>
-				Sin embargo sus contribuciones no se quedaron ahí, por lo que se exhiben en la siguiente lista:
-			</p>
-			<p>
-				<ul>
-					<li> La remodelación y ampliación de la Iglesia Torrentista. </li>
-					<li> La remodelación del Palacio Nacional de las Bellas Artes. </li>
-					<li> La creación del Senado de la República. </li>
-					<li> La creación de la Biblioteca Nacional. </li>
-					<li> La construcción del Ministerio de Cultura. </li>
-					<li> La construcción del Ministerio de Turismo. </li>
-					<li> La construcción del Ministerio de Transporte. </li>
-					<li> La construcción del Ministerio de Educación. </li>
-					<li> Creación de distintos ministerios públicos a lo largo del país. </li>
-					<li> Inauguración de más planteles de licenciatura, bachillerato, superior y básica pertenecientes a la UNU. </li>
-					<li> La creación del tren para estudiantes de la Escuela Nacional de Magia Natural en el estado de Hooligan. </li>
-					<li> La creación de la norma 321 en la que se especifica ninguna pena procede hasta no dar por válidas las pruebas y testimonios de testigos, provocando que nadie fuera acusado injustamente. </li>
-					<li> La instalación de cámaras de video seguridad en cada calle de Urbenia. </li>
-				</ul>
+				Lamentablemente, el mandato de Paty no estuvo excento de guerras, puesto que el Gran Imperio Romano
+				irrumpió en el país. Urbenia perdió.
 			</p>
 		</div>
-</div>
+	</div>
 
-<div class="contGeneral">
-	<div class="foto"> <img src="fotosPresidencia/PFrye.png"> </div>
-	<div class="infoFecha"> <p> Frye Ducoing | Época 4 y Actual </p> </div>  
+	<div class="contGeneral">
+		<div class="foto"> <img src="{{ '/imagenes/fotosPresidentes/PFrye.png' | relative_url }}"> </div>
+		<div class="infoFecha">
+			<p> Frye Ducoing | Época 4 (Actual) | 16 de octubre de 2022 </p>
+		</div>
 		<div class="infoPresidencia">
 			<p>
-				Nuestra actual presidenta, Frye Ducoing, comenzó su gobierno con la restauración del antiguo poblado del Reino de Otwór, convirtiendo todo el sitio en un museo de historia nacional para preservar la cultura que dio inicio a las razas de Otwór (planeta).
+				Nuestra actual presidenta, Frye Ducoing, comenzó su gobierno con la restauración del antiguo poblado del
+				Reino de Otwór, convirtiendo todo el sitio en un museo de historia nacional para preservar la cultura
+				que dio inicio a las razas de Otwór, -el planeta-.
 			</p>
 			<p>
 				Los hitos que ha logrado hasta ahora son:
 			</p>
-			<p>
-				<ul>
-					<li> La creación de rutas de ciclismo eficiente y seguras. </li>
-					<li> La restauración del crucero espacial en el que llegaron los humanos. </li>
-					<li> La creación del Acantilado Biológico en el estado de Cerna </li>
-				</ul>
-			</p>
+			<ul>
+				<li> Promoción del "Solarpunk", un movimiento que prioriza el futuro impulsado por energías renovables y
+					armonía ecológica, por lo que la mayoría de edificios en todo el país sufrieron remodelaciones cómo
+					la estación de radio "SKR", el Ministerio de la Abundancia, el Museo de las Bellas Artes, la Sacra
+					Catedral Torrentista, entre otros. </li>
+				<li> La creación de rutas de ciclismo eficiente y seguras. </li>
+				<li> La creación del Acantilado Biológico en el estado de Cerna </li>
+				<li> Creación de esta página web. </li>
+				<li> Instauración del Socialismo, así como diversas leyes, cómo el matrimonio igualitario, educación
+					sexual obligatoria, castigos públicos, prohibición de posesión de armas, chips de identificación,
+					uso de cannabis recreativo, prohibición de automóviles y la prohibición de armas de destrucción
+					masiva. </li>
+			</ul>
 		</div>
-</div> 
+	</div>
 
-<hr>
 
-<h4> <p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p> </h4>
+	<hr>
 
-<script src="{{ '/general/menu.js' | relative_url }}"></script>
+	<h4>
+		<p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
+	</h4>
+
+	<script src="{{ '/general/menu.js' | relative_url }}"></script>
 
 </BODY>
 

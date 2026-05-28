@@ -6,193 +6,320 @@ layout: none
 <HTML>
 
 <HEAD>
-<link rel="icon" href="{{ '/general/imagenes/URBIcono.png' | relative_url }}">
-<link rel="stylesheet" href="{{ '/general/controlEstilo.css' | relative_url }}">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<META http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
 
-<TITLE> Urbenia | Enlaces </TITLE>
+	<META name="keywords" content="Urbenia, minecraft, indie-web, homebrew">
+	<META name="author" content="Torrente">
+	<META name="description" content="NacionalUrbenia es la página web de la Magnífica República de Urbenia.">
 
-<META name="description" content="Gobierno de Urbenia">
-<META name="keywords" content="Gobierno de Urbenia">
+	<link rel="icon" href="{{ '/imagenes/logos/URBIcono.png' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloGeneral.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloEnlaces.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/controlEstilo.css' | relative_url }}">
+
+	<TITLE> Urbenia | Enlaces </TITLE>
 
 </HEAD>
 
-<BODY style="background-color:#ADADAD;" style="text-align: justify">
+<BODY>
 
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	{% include menu.html %}
 
-{% include menu.html %}
+	<div class="img-titulo"><img src="{{ '/imagenes/logos/URBtitulo.png' | relative_url }}"></div>
 
-<div class="img-titulo"><img src="{{ '/general/imagenes/URBtitulo.png' | relative_url }}"></div>
+	<div class="presentacion">
+		<p>
+			El ministerio de Cultura, el ministerio de educación y el departamento de tecnologías de la Magnífica
+			República de Urbenia presentan este espacio para la difusión masiva de nuestra cultura a través
+			de listas de reproducción, documentos, imágenes y aplicaciones que se han realizado a lo largo de los
+			años.
+		</p>
+		<p>
+			Este apartado pretende centralizar los recursos que Urbenia ha creado para su población y la extranjera,
+			facilitando el acceso de los mismos.
+		</p>
+		<p>
+			El listado de contribuciones se actualizará cada vez que Urbenia cree algo nuevo.
+		</p>
+	</div>
 
-<div class="presentacion">
-	<p>
-		La Secretaría de Cultura y el departamento de tecnologías del Gobierno de Urbenia se complacen en presentar 
-		este apartado en la página web para preservar y habilitar mundialmente las aplicaciones, arte y compilaciones
-		de música que el país ha realizado a lo largo de los años, con la finalidad de poder hacer accesibles todos
-		estos recursos por más de un medio (como lo pueden ser publicaciones en las redes sociales del gobierno o en
-		las tiendas de aplicaciones).
-	</p>
-	<p>
-		Para poder acceder a cada uno de estos recursos solo toca la imagen en cada categoría y te llevará o descargará
-		el elemento correspondiente.
-	</p>
-</div>
-
-<div class="contGeneral">
-	<div class="titulo"> <a href="#Arte_y_propaganda"> Arte y Propaganda </a> </div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="iconos" href="{{ '/descargas/iconos.zip' | relative_url }}" download="iconos.zip"><img class="imgGenerica" src="imagenesEnlaces/iconos_icono.png"></a>
-			<div class="columna">
-				<h3> Iconos v1</h3>
-				<p>
-					En este archivo comprimido encontrarás imágenes con la bandera de Urbenia que puedes usar para lo que desees.
-				</p>
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Arte y Propaganda </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<a id="iconos" href="{{ '/descargas/iconos.zip' | relative_url }}" download="iconos.zip"><img
+						class="imgGenerica" src="{{ '/imagenes/imgEnlaces/iconos_icono.png' | relative_url }}"></a>
+				<div class="columna">
+					<h3> Íconos v1</h3>
+					<p>
+						Este es un archivo compreso en el que encontrarás imágenes de distintos tamaños con los
+						colores de Urbenia que podrás usar.
+					</p>
+					<p>
+						Algunos tienes nombres sugerentes, -como "Fondo de Pantalla", "Banner de Twitter", "Fondo
+						de teclado", entre otros-, pero sé libre de usarlos a tu antojo.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<a id="Propaganda_1" href="{{ '/descargas/Propaganda_Socialista_De_Urbenia.pdf' | relative_url }}"
+					download="Propaganda_Socialista_De_Urbenia.pdf"><img class="imgGenerica"
+						src="{{ '/imagenes/imgEnlaces/iconos_icono.png' | relative_url }}"></a>
+				<div class="columna">
+					<h3> Propaganda v1 </h3>
+					<p>
+						¿Quieres mostrarle a tus amigas/os por qué deberían unirse a este bello país? Descarga esta
+						propaganda en formato pdf y haz que todas las personas la vean. Convenceles de que
+						Urbenia es el mejor país que existe.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Propaganda_1" href="{{ '/descargas/Propaganda_Socialista_De_Urbenia.pdf' | relative_url }}" download="Propaganda_Socialista_De_Urbenia.pdf"><img class="imgGenerica" src="imagenesEnlaces/iconos_icono.png"></a>
-			<div class="columna">
-				<h3> Propaganda v1 </h3>
-				<p>
-					¿Quieres mostrarle a tus amigas/os por qué deberían unirse a este bello país? Descarga esta propaganda en formato pdf y haz que
-					todas las personas la vean. Convenceles de que Urbenia es el mejor país que existe.
-				</p>
+
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Aplicaciones </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
+				<img class="imgGenerica" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
+				<div class="columna">
+					<h3> Explora CDMX v2.0.0</h3>
+					<p>
+						¿Alguna vez has querido salir de paseo en la Ciudad de México y no sabes a dónde ir?
+					</p>
+					<p>
+						Pues no esperes más, porque Explora CDMX ha acabado con eso. Esta aplicación para móviles
+						android recopila sitios interesantes y te muestra la información necesaria para que sólo
+						tengas que elegir e ir.
+					</p>
+					<p>
+						Sin anuncios, sin muros de pago ni subscripciones; ¡Sólo tú y la ciudad a una aplicación
+						de distancia!
+					</p>
+					<p>
+						Además, ahora permite filtrar por tipo de lugar y alcaldía, permitiéndote buscar más
+						facilmente.
+					</p>
+					<p>
+						Descárgala ya.
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton urbenia">
+							<a id="ExploraDescUrbenia" href="{{ '/descargas/explora_cdmx_v2.0.0.apk' | relative_url }}"
+								download="explora_cdmx_v2.0.0.apk"> Descarga desde Aquí </a>
+						</div>
+						<div class="boton github">
+							<a id="ExploraDescGithub"
+								href="https://github.com/PapiTorrente/ProgramacionMovil/releases/tag/v2.0.0"> Descarga
+								desde Github </a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="contGeneral">
-	<div class="titulo"> <a href="#Aplicaciones"> Aplicaciones </a> </div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
-			<a id="Propaganda_1" href="{{ '/descargas/explora_cdmx_v2.0.0.apk' | relative_url }}" download="explora_cdmx_v2.0.0.apk"><img class="imgGenerica" src="imagenesEnlaces/explora_cdmx_icono.png"></a>
-			<div class="columna">
-				<h3> Explora CDMX v2.0.0</h3>
-				<p>
-					¿Alguna vez has querido salir en la Ciudad de México y no sabes a dónde ir? 
-				</p>
-				<p>
-					Con 'Explora CDMX' esos días quedaron atrás porque esta aplicación recopila lugares interesantes por tí y te
-					los muestra con una sencilla interfaz en dónde encontrarás una imagen, una descripción corta, su ubicación y
-					horario, y si tiene un sitio web, ¡También!
-				</p>
-				<p>
-					Además, ahora permite filtrar por tipo de lugar y por alcaldía, permitiéndote buscar más facilmente. :D
-				</p>
-				<p>
-					Agenda ya tu proxima salida en minutos.
-				</p>
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Música </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<img class="imgGenerica" src="{{ '/imagenes/imgEnlaces/playlist_urbenia_icono.png' | relative_url }}">
+				<div class="columna">
+					<h3> Radio Urbenia </h3>
+					<p>
+						Escuchar música es parte esencial de Urbenia, asi que se creó esta playlist con distintos
+						géneros musicales; Siéntete libre de explorar las 68 horas y 33 minutos de pura música.
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton no-disponible">
+							<a id="UrbeniaYT"
+								href="https://open.spotify.com/playlist/0llmb7CsWPzVoKYiQcgAZI?si=3eda4148dd544c81">
+								Escucha en YouTube </a>
+						</div>
+						<div class="boton spotify">
+							<a id="UrbeniaSP"
+								href="https://open.spotify.com/playlist/0llmb7CsWPzVoKYiQcgAZI?si=3eda4148dd544c81">
+								Escucha en Spotify </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<img class="imgGenerica" src="{{ '/imagenes/imgEnlaces/Paola.JPG' | relative_url }}">
+				<div class="columna">
+					<h3> Paola (Mix que me recuerda a ti.)</h3>
+					<p>
+						Este álbum fue dedicado por el presidente Torrente a una de sus mejores amigas en formato
+						físico, -sí, en un CD!-. En sí es un regalo personal, pero creemos que la música sabe
+						mejor si es compartida.
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton youtube">
+							<a id="PaolaYT"
+								href="https://youtube.com/playlist?list=PLXVnE0xVJwB1wkEMZZE-kfVvcPnYUvrov&si=U_dLD1zaIZoDqIVq">
+								Escucha en YouTube </a>
+						</div>
+						<div class="boton spotify">
+							<a id="PaolaSP"
+								href="https://open.spotify.com/playlist/6uHpVElhvWtfUGWNw8K1qZ?si=u5ihGmafR8qw5gDTMHZXfA">
+								Escucha en Spotify </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<img class="imgGenerica" src="{{ '/imagenes/imgEnlaces/Paola_Vol.2.png' | relative_url }}">
+				<div class="columna">
+					<h3> Paola Vol.2 (Mix que me recuerda a ti.)</h3>
+					<p>
+						Si bien este álbum es aún más personal que el anterior por variadas razones que el presidente
+						ha querido mantener en secreto, Urbenia mantiene su palabra al querer compartir la lista
+						de reproducción porque cada una misma canción puede tener distintos significados para
+						muchas personas y eso la hace especial.
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton youtube">
+							<a id="PaolaYTv2"
+								href="https://youtube.com/playlist?list=PLXVnE0xVJwB0V1JXiHJKITIDopS9drhuM&si=I75QSIm-VI0gCmMc">
+								Escucha en YouTube </a>
+						</div>
+						<div class="boton no-disponible">
+							<a id="PaolaSPv2"
+								href="https://youtube.com/playlist?list=PLXVnE0xVJwB0V1JXiHJKITIDopS9drhuM&si=I75QSIm-VI0gCmMc">
+								Escucha en Spotify </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<img class="imgGenerica" src="{{ '/imagenes/imgEnlaces/Frye.jpg' | relative_url }}">
+				<div class="columna">
+					<h3> [ Archivo en Redacción | Retenido por el Ministerio de Cultura ] </h3>
+					<p>
+						El Ministerio de Cultura se encuentra analizando este contenido, por lo que no puede ser
+						mostrado en este momento. Próximamente estará disponible para toda la población de la
+						Magnífica República de Urbenia.
+					</p>
+					<p>
+						¡Gracias por tu paciencia!
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton no-disponible">
+							<a id="FryeYT"
+								href="https://youtube.com/playlist?list=PLXVnE0xVJwB0XYoKvPQItReXZ0bIdem4f&si=d6t4WqVbGczKZR21">
+								[ :D ] </a>
+						</div>
+						<div class="boton no-disponible">
+							<a id="FryeSP"
+								href="https://open.spotify.com/playlist/27h3yoQ40tv7qqQ0TnCeAO?si=8D9XLAPcSuqbulPxv1tFpg">
+								[ :D ] </a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="contGeneral">
-	<div class="titulo"> <a href="#Musica"> Música </a> </div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Radio_Urbenia" href="https://open.spotify.com/playlist/0llmb7CsWPzVoKYiQcgAZI?si=3eda4148dd544c81"><img class="imgGenerica" src="imagenesEnlaces/playlist_urbenia_icono.png"></a>
-			<div class="columna">
-				<h3> Urbenia en Spotify </h3>
-				<p>
-					Escuchar música es parte esencial de Urbenia, asi que se creó esta playlist con la intención de representar los
-					sentimientos de toda una nación. 
-				</p>
-				<p>
-					En esta playlist encontrarás géneros musicales variados para casi cada ocasión, siéntete libre de explorar las 68
-					horas y 33 minutos de pura música.
-				</p>
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Historias </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<a id="GranDesconocido"
+					href="https://docs.google.com/document/d/1H-92cJSLjO9SHmqHGEd3wR_GKl4rd5Zs6diS68wbfeM/edit?usp=sharing"><img
+						class="imgGenerica" src="{{ '/imagenes/imgEnlaces/texto_icono.png' | relative_url }}"></a>
+				<div class="columna">
+					<h3> El Gran Desconocido </h3>
+					<p>
+						Un escritor muy famoso de Urbenia es invitado a presentar sus nuevas obras en la capital,
+						pero un infortunio le hace encontrarse con el Gran Desconocido.
+					</p>
+					<p>
+						El presidente Torrente escribió esta historia corta para una clase de preparatoria, y
+						aunque representa sus primeros pasos en la escritura formal, sirvió como inspiración para
+						comenzar a escribir cosas para Urbenia y hacer de este proyecto algo más grande que no se
+						limite a los mundos infinitos de Minecraft.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Paola" href="https://youtube.com/playlist?list=PLXVnE0xVJwB1wkEMZZE-kfVvcPnYUvrov&si=U_dLD1zaIZoDqIVq"><img class="imgGenerica" src="imagenesEnlaces/Paola.JPG"></a>
-			<div class="columna">
-				<h3> Paola (Mix que me recuerda a ti.)</h3>
-				<p>
-					Este álbum se lo dediqué y regalé a una de mis mejores amigas en formato físico. No pensaba compartirlo aqui por ser un regalo
-					personal, sin embargo, he considerado que la música debería compartirse y no ocultarse, además, creo que el hecho de
-					compartirlo no hará que pierda la razón de ser puesto que sólo ella y yo sabemos lo que significa.
-				</p>
-				<p>
-					Si bien el álbum no es para nadie que esté leyendo esto, espero que lo disfruten.
-				</p>
+
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Mundos de Minecraft </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<div class="fila">
+				<a id="MundoMinecraft1" href="https://www.mediafire.com/file/v969dd97xkrex61/Urbenia.mcworld/file"><img
+						class="imgGenerica" src="{{ '/imagenes/imgEnlaces/minecraft_icono.png' | relative_url }}"></a>
+				<div class="columna">
+					<h3> Urbenia - Época 1 </h3>
+					<p>
+						Descarga el mundo para Minecraft: Bedrock Edition del primer servidor exclusivo de Urbenia,
+						el cual fue propuesto por nuestra presidenta Paty.
+					</p>
+					<p>
+						Este mundo se ambienta en los primeros días de Urbenia, canónicamente en la época 1 y más
+						específicamente, el 21 de diciembre del 2019 cuando Urbenia hizo su primera aparición en el
+						servidor de "La Coalición", -administrado por Donovan-.
+					</p>
+					<p>
+						Explora lo que construimos juntos, la historia que creó Paty, Mar, Bender, Christopher
+						"Nepotime",
+						Alexa "Fera", Karla, Antonio, William, Alan, Zeus, Manuel, David, Ariadna, Mayito y Torrente.
+					</p>
+					<p>
+						Descubre los pueblos originarios de los Cuauhtlacah, -Gente del bosque, antes Azúex-, los
+						Aztapiltacah, -Gente de las alas de garza, antes Bines-, los Tepoztlacah, -Gente de
+						metal, antes Cígos-, los Atlanemini, -Los que viven bajo el agua, antes Modías-, los
+						Tetzauhtlacatoton, -Pequeñas personas mágicas, antes Mungos-, y los Cehuatlacah, -Gente del
+						frío, antes Pelesées-.
+					</p>
+					<p>
+						Hemos de advertir que en este mundo no están los Mictlan-tlacah, -Gente del inframundo,
+						antes Ultiones-, puesto que no había llegado la actualización 1.17 que expandió los límites
+						inferiores del mundo de Minecraft. Sin embargo, en la historia completa de la Magnífica
+						República de Urbenia encontrarás que el primer capítulo habla sobre la época 1 y este mundo
+						de Minecraft, con la adición de los Mictlan-tlacah y otros eventos que no ocurrieron
+						completamente
+						en este archivo, haciendo de la historia una experiencia completa.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Paolav2" href="https://youtube.com/playlist?list=PLXVnE0xVJwB0V1JXiHJKITIDopS9drhuM&si=I75QSIm-VI0gCmMc"><img class="imgGenerica" src="imagenesEnlaces/Paola_Vol.2.png"></a>
-			<div class="columna">
-				<h3> Paola Vol.2 (Mix que me recuerda a ti.)</h3>
-				<p>
-					Este álbum fue un regalo de San Valentin aún más personal pero para la misma persona que el anterior. Tampoco pensaba compartirlo, pero, llegando
-					a la misma conclusión anterior, considero que ustedes pueden darle su propia interpretación y significado.
-				</p>
-				<p>
-					Espero sea igual de especial para ustedes como para mi y que lo disfruten.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
 
-<div class="contGeneral">
-	<div class="titulo"> <a href="#Historias"> Historias </a> </div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Radio_Urbenia" href="https://docs.google.com/document/d/1H-92cJSLjO9SHmqHGEd3wR_GKl4rd5Zs6diS68wbfeM/edit?usp=sharing" ><img class="imgGenerica" src="imagenesEnlaces/texto_icono.png"></a>
-			<div class="columna">
-				<h3> El Gran Desconocido </h3>
-				<p>
-					Un escritor muy famoso de Urbenia es invitado a presentar sus nuevas obras en la capital, pero un
-					infortunio le hace encontrarse con el Gran Desconocido.
-				</p>
-				<p>
-					Torrente escribió esta historia corta para una clase de preparatoria, y aunque mediocre o mal hecha, sirvió como inspiración para
-					comenzar a escribir cosas para Urbenia y hacer de este proyecto algo más grande.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
+	<hr color="black">
 
-<div class="contGeneral">
-	<div class="titulo"> <a href="#Mundos_de_minecraft"> Mundos de Minecraft </a> </div>
-	<div class="bloqueGrisClaro">
-		<div class="fila">
-			<a id="Propaganda_1" href="https://www.mediafire.com/file/v969dd97xkrex61/Urbenia.mcworld/file"><img class="imgGenerica" src="imagenesEnlaces/minecraft_icono.png"></a>
-			<div class="columna">
-				<h3> Urbenia - Época 1 </h3>
-				<p>
-					Descarga ya el mundo para Minecraft: Bedrock Edition del primer servidor de Urbenia, el cuál fue propuesto por nuestra 
-					presidenta Paty para que fuera exclusivamente sobre Urbenia.
-				</p>
-				<p>
-					Así que descárgalo explora el mundo que juntos construimos, visita los antiguos asentamientos de los -- (antes Azúex), 
-					los -- (antes Bines), los -- (antes Cígos), los -- (antes Modías), los -- (antes Mungos), los -- (antes Pelesées) y, 
-					aunque en este mundo no estan, los -- (antes Ultiones).
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
+	<h4>
+		<p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
+	</h4>
 
-<hr color="black">
-
-<h4> <p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p> </h4>
-
-<script src="{{ '/general/menu.js' | relative_url }}"></script>
+	<script src="{{ '/general/menu.js' | relative_url }}"></script>
 
 </BODY>
 

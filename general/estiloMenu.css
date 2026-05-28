@@ -1,0 +1,168 @@
+/*
+    ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) EXCLUSIVAMENTE
+    PARA EL MENÚ DE LA PÁGINA WEB DE URBENIA (NACIONAL URBENIA).
+*/
+
+.logo img {
+	/* Imagen en el menú */
+	width: 100%;
+	height: auto;
+}
+
+/* Menú para pantallas grandes (Tablets y Computadoras). Termina en la línea 81. */
+.menu-hamburguesa {
+	/* Oculta el menú hamburguesa en pantallas grandes */
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	padding: 10px;
+}
+
+.menu-hamburguesa span {
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 2px 0;
+	transition: 0.4s;
+}
+
+.menu {
+	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
+	background: #4a4a4a;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.navegacion {
+	padding: 0px 0px 2px 0px;
+}
+
+.navegacion ul {
+	/* Quita el estilo de lista a todos los elementos de esta */
+	padding: 0px;
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+.listaMenu {
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+}
+
+.listaMenu>li {
+	position: relative;
+	display: inline-block;
+}
+
+.listaMenu>li>a {
+	/* Agrega un rectángulo redondeado color blanco a cada item */
+	display: block;
+	padding: 10px 36px;
+	margin: 2px;
+	border-radius: 15px;
+	background: #ffffff;
+}
+
+.listaMenu li a:hover {
+	color: #CE7D35;
+}
+
+.subMenu {
+	/* Aspecto de los submenus */
+	position: absolute;
+	background: #e5e5e5;
+	margin: 2px;
+	padding: 0px 4px;
+	border-radius: 15px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .6s;
+}
+
+.subMenu li a {
+	display: block;
+	padding: 8px;
+}
+
+.listaMenu li:hover .subMenu {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Menú para pantallas pequeñas (Celulares). Termina en la linea 149. */
+@media (max-width: 789px) {
+	.navegacion {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.navegacion.modificado {
+		padding: 0px;
+	}
+
+	.menu-hamburguesa {
+		display: flex;
+		/* Mostrar botón del menú hamburguesa */
+		margin: 0 auto;
+		/* Lo alinea al centro */
+		padding: 10px;
+		border-radius: 15px;
+		background: #ffffff;
+		transition: padding 0.3s ease, width 0.3s ease;
+		/* Transición a .presionado no disruptivo */
+		width: auto;
+	}
+
+	.menu-hamburguesa.presionado {
+		padding: 10px 60px;
+	}
+
+	.listaMenu {
+		display: flex;
+		flex-direction: column;
+
+		/* Aparición de elementos no disruptivamente */
+		max-height: 0;
+		/* Estado inicial sin altura */
+		overflow: hidden;
+		/* Corta el contenido que sobresale */
+		transition: all 0.5s ease;
+	}
+
+	.listaMenu.activo {
+		max-height: 500px;
+		/* Estado secundario con altura suficiente para mostrar el contenido */
+		opacity: 1;
+		padding: 2px;
+		/* Espaciado suave */
+	}
+
+	.listaMenu>li {
+		/* Elementos internos entran con retraso */
+		opacity: 0;
+		transition: opacity 0.6s ease;
+
+		position: static;
+		display: grid;
+	}
+
+	.listaMenu.activo>li {
+		opacity: 1;
+	}
+
+	.listaMenu>li>a {
+		display: grid;
+		border-radius: 10px;
+		justify-content: center;
+	}
+
+	.listaMenu li:hover .subMenu {
+		position: static;
+		visibility: visible;
+		opacity: 1;
+	}
+}

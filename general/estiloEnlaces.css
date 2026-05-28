@@ -1,0 +1,80 @@
+/*
+    ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) EXCLUSIVAMENTE
+    PARA EL APARTADO DE ENLACES DE LA PÁGINA WEB DE URBENIA (NACIONAL URBENIA).
+*/
+
+/* Contenido de información */
+.fila {
+	padding: 4px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.columna {
+	margin-left: 10px;
+	display: block;
+}
+
+.columna p {
+	text-align: justify;
+}
+
+@media (max-width: 530px) {
+	.fila {
+		display: grid;
+        justify-items: center;
+	}
+
+    .columna {
+        margin: 0px;
+    }
+
+    .columna h3 {
+        text-align: center;
+    }
+}
+
+/* PARTE DE LOS BOTONES */
+.urbenia {
+    background-color: #E4007C;
+}
+
+.urbenia a {
+    color: white;
+}
+
+.github {
+    background-color: black;
+}
+
+.github a {
+    color: white;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube a {
+    color: #FAFAFA;
+}
+
+.spotify {
+    background-color: #1DB954;
+}
+
+.spotify a {
+    color: #191414;
+}
+
+.no-disponible {
+    background-color: grey;
+    color: white;
+}
+
+.no-disponible a {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: white;
+}

@@ -1,0 +1,70 @@
+/*
+    ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) PARA ELEMENTOS
+    QUE PUEDO REUTILIZAR, COMÚNMENTE CONTENEDORES "DIV" A LOS QUE SE LES APLICAN DIFERENTES
+	ESTILOS DEPENDIENDO DEL CONTENIDO O SI LO REQUIEREN (COMO DIVS DE TITULO, DE CONTENIDO GENERAL
+	O DE UN GRIS MÁS OBSCURO).
+*/
+
+.presentacion {
+	padding: 8px 20px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.presentacion p {
+	text-align: justify;
+}
+
+.titulo {
+	padding: 8px;
+	margin: 8px;
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 10px;
+}
+
+.titulo p {
+	margin: 0px;
+	font-size: 22px;
+}
+
+.contGeneral {
+	/* Diferente de la presentación por el pading para el texto. Este no lo requiere */
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.bloqueGrisClaro {
+	padding: 16px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #e0e0e0;
+}
+
+.bloqueGrisClaro h3 p {
+	margin: 16px;
+}
+
+.bloqueGrisClaro h3 {
+	text-align: center;
+}
+
+.bloqueGrisClaro p {
+	text-align: justify;
+}
+
+.contenedorBotones {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.boton {
+	padding: 8px;
+	margin: 4px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 0px black;
+}

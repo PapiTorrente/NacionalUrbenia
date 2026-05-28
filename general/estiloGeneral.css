@@ -1,0 +1,48 @@
+/*
+    ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) PARA ELEMENTOS
+    GENERALES CÓMO EL FONDO DE LAS PÁGINAS, FUENTES, ENTRE OTROS.
+*/
+
+* {
+	font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
+}
+
+body {
+	background-color: #9A0000;
+	background-image: url(imagenes/logos/imgFondo.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+a {
+	/* Enlaces */
+	text-decoration: none;
+	color: #000000;
+}
+
+.img-titulo {
+	/* Imagen debajo del menú y encima del cuerpo de la página */
+	text-align: center;
+	margin-top: 8px;
+}
+
+.img-titulo img {
+	width: 50%;
+}
+
+.imgGenerica {
+	width: 150px;
+	border-radius: 4px;
+}
+
+@media (max-width: 789px) {
+	.img-titulo img {
+		width: 70%;
+	}
+}
+
+hr {
+	background-color: black;
+	border: 4px solid black;
+	border-radius: 4px;
+}
