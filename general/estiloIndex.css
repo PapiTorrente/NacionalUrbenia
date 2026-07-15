@@ -18,8 +18,20 @@
 
 .contenedorVideo {
     display: grid;
+    place-items: center;
+    width: 100%;
 }
-    
+
+.contenedorVideo iframe {
+    width: 65%;
+}
+
+@media (max-width: 789px) {
+    .contenedorVideo iframe {
+        width: 100%;
+    }
+}
+
 blockquote, iframe {
     /* Bloque de Tiktok y YouTube*/
     border-radius: 10px;
