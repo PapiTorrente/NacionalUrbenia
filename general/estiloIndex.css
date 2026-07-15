@@ -16,7 +16,11 @@
     object-fit: contain;
 }
 
-blockquote {
-    /* Bloque de Tiktok*/
+.contenedorVideo {
+    display: grid;
+}
+    
+blockquote, iframe {
+    /* Bloque de Tiktok y YouTube*/
     border-radius: 10px;
 }
