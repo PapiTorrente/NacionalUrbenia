@@ -9,7 +9,7 @@
 
 body {
 	background-color: #9A0000;
-	background-image: url(imagenes/logos/imgFondo.jpg);
+	background-image: url(/imagenes/logos/imgFondo.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
