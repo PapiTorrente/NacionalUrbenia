@@ -9,7 +9,8 @@
 	padding: 8px 20px;
 	margin: 8px;
 	border-radius: 10px;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.96);
+	box-shadow: 0px 0px 10px black;
 }
 
 .presentacion p {
@@ -21,6 +22,7 @@
 	margin: 8px;
 	text-align: center;
 	background: #a1a1a1;
+	box-shadow: 0px 0px 8px black;
 	border-radius: 10px;
 }
 
@@ -34,14 +36,16 @@
 	padding: 8px;
 	margin: 8px;
 	border-radius: 10px;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.96);
+	box-shadow: 0px 0px 10px black;
 }
 
 .bloqueGrisClaro {
 	padding: 16px;
 	margin: 8px;
 	border-radius: 10px;
-	background: #e0e0e0;
+	background: rgba(224, 224, 224, 0.96);
+	box-shadow: 0px 0px 10px black;
 }
 
 .bloqueGrisClaro h3 p {
