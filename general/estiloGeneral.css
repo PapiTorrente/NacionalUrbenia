@@ -33,7 +33,6 @@ a {
 .imgGenerica {
 	width: 150px;
 	border-radius: 4px;
-	box-shadow: 0px 0px 10px white;
 }
 
 @media (max-width: 789px) {

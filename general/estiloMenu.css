@@ -30,9 +30,10 @@
 
 .menu {
 	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
-	background: rgba(74, 74, 74, 0.99);
-	box-shadow: 0px 0px 10px black;
+	background: rgba(74, 74, 74, 0.6);
+	box-shadow: 0px 0px 12px black;
 	border-radius: 0px 0px 20px 20px;
+	backdrop-filter: blur(6px);
 }
 
 .navegacion {
