@@ -21,7 +21,7 @@
 	padding: 8px;
 	margin: 8px;
 	text-align: center;
-	background: #a1a1a1;
+	background: #9a0000;
 	box-shadow: 0px 0px 8px black;
 	border-radius: 10px;
 }
@@ -29,6 +29,8 @@
 .titulo p {
 	margin: 0px;
 	font-size: 22px;
+	font-weight: bold;
+	color: white;
 }
 
 .contGeneral {
@@ -45,7 +47,7 @@
 	margin: 8px;
 	border-radius: 10px;
 	background: rgba(224, 224, 224, 0.96);
-	box-shadow: 0px 0px 10px black;
+	box-shadow: inset 0px 0px 10px black;
 }
 
 .bloqueGrisClaro h3 p {
