@@ -5,6 +5,7 @@
 	padding: 8px;
 	text-align: center;
 	background: #cfcfcf;
+	box-shadow: inset 0px 0px 10px black;
 	border-radius: 6px 6px 0px 0px;
 }
 
@@ -103,10 +104,12 @@
 }
 
 .infoFecha { /* Usado junto a .foto porque es para la presidencia */
+	font-family: 'Oswald';
 	margin: 1px 8px 8px 8px;
 	padding: 8px;
 	text-align: center;
 	background: #a1a1a1;
+	box-shadow: 0px 2px 4px black;
 	border-radius: 0px 0px 6px 6px;
 }
 
@@ -121,6 +124,7 @@
 	padding: 8px;
 	background: #cfcfcf;
 	border-radius: 6px;
+	box-shadow: 0px 0px 6px black;
 }
 	/* Fin Bloques de Texto */
 
