@@ -2,19 +2,6 @@
     ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) PARA ELEMENTOS
     EXCLUSIVOS DEL INDEX (O PÁGINA PRINCIPAL).
 */
-.bloqueGrisClaro h5 {
-    text-align: center;
-}
-
-.contenedorImagen {
-    height: 400px;
-}
-
-.contenedorImagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 .contenedorVideo {
     display: grid;

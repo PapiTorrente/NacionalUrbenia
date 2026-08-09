@@ -1,0 +1,9 @@
+.bloqueGrisClaro h5 {
+    text-align: center;
+}
+
+.contenedorImagen img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+}

@@ -13,26 +13,27 @@
 	width: 48%;
 }
 
-		/* Carrusel de Fotos */
-.carrusel-fotos {
-	width: 100%;
-	max-width: 1190px;
-	margin: 10px auto;
-
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 4px;
+.infoFecha { /* Usado junto a .foto porque es para la presidencia */
+	margin: 1px 8px 8px 8px;
+	padding: 8px;
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 0px 0px 6px 6px;
 }
 
-.carrusel-fotos img {
-	width: 100%;
-	object-fit: cover;
+.infoFecha > p {
+	margin: 0px;
+	padding: 5px;
+	font-size: 26px;
 }
 
-.carrusel-fotos img:hover {
-	transform: scale(1.2);
+.infoPresidencia {
+	margin: 8px;
+	padding: 8px;
+	background: #cfcfcf;
+	border-radius: 6px;
 }
-		/* Fin Carrusel de Fotos */
+
 	/* Fin Imagenes */
 
 .bloqueCreditos {
@@ -103,29 +104,6 @@
 	}
 }
 
-.infoFecha { /* Usado junto a .foto porque es para la presidencia */
-	font-family: 'Oswald';
-	margin: 1px 8px 8px 8px;
-	padding: 8px;
-	text-align: center;
-	background: #a1a1a1;
-	box-shadow: 0px 2px 4px black;
-	border-radius: 0px 0px 6px 6px;
-}
-
-.infoFecha > p {
-	margin: 0px;
-	padding: 5px;
-	font-size: 26px;
-}
-
-.infoPresidencia {
-	margin: 8px;
-	padding: 8px;
-	background: #cfcfcf;
-	border-radius: 6px;
-	box-shadow: 0px 0px 6px black;
-}
 	/* Fin Bloques de Texto */
 
 	/* Tabla */
@@ -159,8 +137,3 @@ table, th, td {
 }
 	/* Fin Tabla */
 /* Fin Cuerpo del Documento */
-
-/* Pie de Página */
-h4 p {
-	color:white;
-}
