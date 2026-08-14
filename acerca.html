@@ -20,7 +20,6 @@ layout: none
 	<link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
 	<link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
 	<link rel="stylesheet" href="{{ '/general/estiloAcerca.css' | relative_url }}">
-	<link rel="stylesheet" href="{{ '/general/controlEstilo.css' | relative_url }}">
 
 	<TITLE> Urbenia | Acerca de </TITLE>
 
@@ -28,15 +27,77 @@ layout: none
 
 <BODY>
 
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-
 	{% include menu.html %}
 
 	<div class="img-titulo"><img src="{{ '/imagenes/logos/URBtitulo.png' | relative_url }}"></div>
 
 	<div class="contGeneral">
 		<div class="titulo">
-			<p> HISTORIA DE URBENIA EN LA HISTORIA OFICIAL </p>
+			<p> QUIENES SOMOS </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<p>
+				La Magnífica República de Urbenia, o sólo Urbenia, es un proyecto independiente mexicano liderado 
+				e integrado por Yael Castilla (Torrente), Frida (Frye) Ducoing y Patricia Vargas (Paty Arez),
+				principalmente, con la participación de Paola Madrigal (Zero), Ángel López (Freaky Cloud) y los
+				integrantes del servidor de Urbenia en Minecraft, todos ellos siendo colaboradores en algunos 
+				espacios de este gran proyecto.
+			</p>
+			<p>
+				Mencionamos "gran proyecto" porque no sólo nos referimos a la nación ficticia, sino también a
+				los cortometrajes y contenido de redes sociales, el desarrollo de aplicaciones, -cómo Explora CDMX-,
+				las historias de fantasía que ayudan a la creación de este mundo, las listas de reproducción de música,
+				iconografías y propaganda o servidores en distintos juegos, -comúnmente Minecraft-, entre otras cosas
+				que hemos hecho y haremos en el futuro. (Actualmente, cuando hablamos en plural en esta página, solemos 
+				referirnos a Torrente).
+			</p>
+			<p>
+				¿Ya mencionamos que nos ubicamos en el ombligo de la luna? Bueno, siendo más específicos, somos chilangos,
+				pero esperamos que pronto este proyecto sea internacional y deje de ser manejada esta página exclusivamente
+				por Torrente.
+			</p>
+			<p>
+				A continuación te mostramos los colores que usamos:
+			</p>
+			<h3> Principales </h3>
+			<div class="fila filaAcerca">
+				<div class="cajaColor colorPrincipal" style="background-color: #e4007c; color: white;">
+					<p>Rosa Méxicano: #e4007c</p>
+				</div>
+				<div class="cajaColor colorPrincipal" style="background-color: #F2F3F4; color: black;">
+					<p>Blanco Anti Flash: #F2F3F4</p>
+				</div>
+				<div class="cajaColor colorPrincipal" style="background-color: #004359; color: white;">
+					<p>Cerúleo Profundo: #004359</p>
+				</div>
+			</div>
+			<h3> Variantes claras y obscuras </h3>
+			<div class="fila filaAcerca">
+				<div class="cajaColor colorSecundario" style="background-color: #FF1E9A; color: white;">
+					<p>#FF1E9A</p>
+				</div>
+				<div class="cajaColor colorSecundario" style="background-color: #ffffff; color: black;">
+					<p>#ffffff</p>
+				</div>
+				<div class="cajaColor colorSecundario" style="background-color: #1E647B; color: white;">
+					<p>#1E647B</p>
+				</div>
+				<div class="cajaColor colorSecundario" style="background-color: #89004B; color: white;">
+					<p>#89004B</p>
+				</div>
+				<div class="cajaColor colorSecundario" style="background-color: #BCC1C6; color: white;">
+					<p>#BCC1C6</p>
+				</div>
+				<div class="cajaColor colorSecundario" style="background-color: #003445; color: white;">
+					<p>#003445</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> HISTORIA DE URBENIA EN LA FICCIÓN </p>
 		</div>
 		<div class="bloqueGrisClaro">
 			<p>
@@ -47,11 +108,13 @@ layout: none
 			</p>
 			<p>
 				Urbenia es país aliado del Sacro Imperio de Arnus, aunque mantiene acuerdos diplomáticos y/o fronteras
-				con el Gran Imperio Romano, Gondor, el Imperio Británico Galáctico, la República de Japón, la República de 
-				Baxter y la República de Hispania. (Deberías hacer clic en el mapa ;D)
+				con el Gran Imperio Romano, Gondor, el Imperio Británico Galáctico, la República de Japón, la República
+				de Baxter y la República de Hispania. (Deberías hacer clic en el mapa ;D)
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/mapaCoalicion.jpg' | relative_url }}">
+				<img id="mapaCoalicion"
+					alt="Mapa de la Coalición por Demitrius Augustus (Christopher Abundis), 21 de enero del 2020"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/mapaCoalicion.jpg' | relative_url }}">
 			</div>
 			<p>
 				Nuestra historia comienza hace muchos años, lo que hemos contado como 4 épocas, pero en realidad, la
@@ -59,40 +122,41 @@ layout: none
 				pertenecientes al antiguo reino de Otwór.
 			</p>
 			<p>
-				Durante la primera época, Urbenia era un país pequeño en vías de desarrollo que estableció relaciones 
-				diplomáticas con el Sacro Imperio de Arnus, Gondor y el Gran Imperio Romano, sentó las bases de su 
-				economía y libró la "Guerra de las Razas", dónde los pueblos cuautlacas, tetzauhtlacatotons, aztapiltlacas,
-				cehuatlacas, atlaneminis y humanos se unieron para derrotar a los tepoztlacas, quienes después de su derrota
-				y tras años de expulsión, se unieron a la Magnífica República de Urbenia.
+				Durante la primera época, Urbenia era un país pequeño en vías de desarrollo que estableció relaciones
+				diplomáticas con el Sacro Imperio de Arnus, Gondor y el Gran Imperio Romano, sentó las bases de su
+				economía y libró la "Guerra de las Razas", dónde los pueblos cuautlacas, tetzauhtlacatotons,
+				aztapiltlacas, cehuatlacas, atlaneminis y humanos se unieron para derrotar a los tepoztlacas,
+				quienes después de su derrota y tras años de expulsión, se unieron a la Magnífica República de Urbenia.
 			</p>
 			<p>
 				Posteriormente, durante la segunda época, Urbenia comenzó a establecer relaciones diplomáticas con otras
-				naciones emergentes mientras se expandia territorial y económicamente, construyendo la planta nuclear en el
-				estado de Frye, la sede del poder militar en el estado de Abaddon, uno de los puertos en el estado de Cerna,
-				el primer puente interoceánico y la ubicación de capital en el estado de Austin.
+				naciones emergentes mientras se expandia territorial y económicamente, construyendo la planta nuclear en
+				el estado de Frye, la sede del poder militar en el estado de Abaddon, uno de los puertos en el estado de
+				Cerna, el primer puente interoceánico y la ubicación de capital en el estado de Austin.
 			</p>
 			<p>
-				Sin embargo también libró dos guerras, la primera contra la República de Baxter y la segunda contra el 
+				Sin embargo también libró dos guerras, la primera contra la República de Baxter y la segunda contra el
 				Sacro Imperio de Arnus.
 			</p>
 			<p>
-				En la tercera época Urbenia se enfocó en consolidar su estatus político frente a otras naciones mediante la
-				construcción del Senado de la República y el cambio de nombre de "Urbenia" a la "Magnífica República de 
-				Urbenia", además, adoptó la religión Torrentista cuya previa principal iglesia ubicada en Austin fue demolida
-				y reconstruída como la "Sacra Catedral Torrentista", con un estilo gótico.
+				En la tercera época Urbenia se enfocó en consolidar su estatus político frente a otras naciones mediante
+				la construcción del Senado de la República y el cambio de nombre de "Urbenia" a la "Magnífica República
+				de Urbenia", además, adoptó la religión Torrentista cuya previa principal iglesia ubicada en Austin
+				fue demolida y reconstruída como la "Sacra Catedral Torrentista", con un estilo gótico.
 			</p>
 			<p>
 				Adicionalmente, Urbenia luchó en contra del Gran Imperio Romano.
 			</p>
 			<p>
-				Finalmente, en la cuarta época, el Gobierno de Urbenia, encabezado por la presidenta Frye Ducoing, 
+				Finalmente, en la cuarta época, el Gobierno de Urbenia, encabezado por la presidenta Frye Ducoing,
 				se dio cuenta de que la nación necesitaba un cambio de rumbo puesto que, a pesar de los esfuerzos de la
 				presidenta y presidentes anteriores por una Urbenia ecologista, progresista y socialmente justa, esta
-				había adquirido una estética brutalista, por lo que la presidenta instauró el socialismo e instauró diversas
-				leyes cómo el matrimonio igualitario, la educación sexual obligatoria, los castigos públicos, la prohibición 
-				de posesión de armas, la colocación de chips de identificación, la legalización del cannabis, la prohibición 
-				de automóviles y la prohibición de armas de destrucción masiva. (Para saber más de los hítos de cada presidenta
-				y presidente, consultar la sección de "Presidencia")
+				había adquirido una estética brutalista, por lo que la presidenta instauró el socialismo e instauró
+				diversas leyes cómo el matrimonio igualitario, la educación sexual obligatoria, los castigos
+				públicos, la prohibición de posesión de armas, la colocación de chips de identificación, la
+				legalización del cannabis, la prohibición de automóviles y la prohibición de armas de destrucción
+				masiva. (Para saber más de los hítos de cada presidenta y presidente, consultar la sección de
+				"Presidencia")
 			</p>
 			<p>
 				Actualmente, durante la quinta época, Urbenia se encuentra en su mejor momento.
@@ -112,7 +176,7 @@ layout: none
 			</p>
 			<h3> 21 de diciembre del 2019 </h3>
 			<p>
-				Johan invita a Torrente (Carlos Castilla) a un servidor de Minecraft llamado "La Coalición" y en el
+				Johan invita a Torrente (Yael Castilla) a un servidor de Minecraft llamado "La Coalición" y en el
 				grupo de facebook messenger le explican que la temática del servidor es crear una nación, tomando
 				como base una existente, y darle economía, cultura y un nombre.
 				Así, la primera opción de Torrente es llamar a su nación "Aztlán", pero por azares del destino ese
@@ -133,97 +197,148 @@ layout: none
 				un bioma nuevo o aprovechar la nueva generación de terreno del juego.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/12Ene20.jpg' | relative_url }}">
+				<img id="12Ene20" alt="Vista a Urbenia desde la primera estación de metro, 12 de enero del 2020"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/12Ene20.jpg' | relative_url }}">
 			</div>
 
 			<h3> 7 de abril del 2020 </h3>
 			<p>
-				Eran épocas de pandemia por COVID-19 y para Urbenia el mundo cambiaba por primera vez, pero eso hizo que
-				se expandiera enormemente, el lore floreció y hubo batallas, alianzas, crucifixiones y addons.
+				Eran épocas de pandemia por COVID-19 y para Urbenia el mundo cambiaba por primera vez, pero en vez de
+				ser algo malo, sólo provocó que el 'país' pasara de una pequeña zona, -o un pequeño pueblo-, en los
+				bosques de abeto a ocupar seis biomas diferentes, construir más calles, -que Torrente creía eran
+				carreteras-, e indudablemente que el lore floreciera debido a batallas, alianzas, crucifixiones y
+				addons.
+			</p>
+			<p>
+				De la nada, el Gran Imperio Romano decidió crucificar a Torrente y crear 'El Torrentismo', cuya 'biblia'
+				fué escrita por Torrente, Josh, Christopher y Donovan. Esta 'biblia' la pueden encontrar en los
+				documentos de esta página.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/6Jun20.jpg' | relative_url }}">
+				<img id="6Jun20"
+					alt="Mapa de la república en el Cuartel General de las Fuerzas Armadas Urbenianas (Abbadon, Urbenia), 6 de junio del 2020"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/6Jun20.jpg' | relative_url }}">
 			</div>
 
 			<h3> 2 de julio de 2020 </h3>
 			<p>
-				El servidor volvía a cambiar de mundo y aunque no fue tan agradable para Torrente, sabía que era lo
-				mejor para permitirle desarrollar más la ciudad y sus habilidades para construir. Así inició una
-				nueva "época" y aunque Urbenia no tuvo el mismo tamaño que en el mundo anterior, si mejoró.
+				Posteriormente, después de aproximadamente tres meses, el servidor volvía a cambiar de mundo y aunque no
+				fue tan agradable para Torrente, sabía que era lo mejor para permitirle desarrollar más la ciudad,
+				aunque también influyó que Donovan dijera que podría traspasar construcciones del mundo anterior al
+				nuevo.
+			</p>
+			<p>
+				Así inició una nueva "época" y aunque Urbenia no tuvo el mismo tamaño que en el mundo anterior, si
+				mejoró pues se decidió remodelar varios edificios, entre ellos la Iglesia Torrentista para que tuviera
+				un estilo más gótico y que después del cambio fue llamada 'Sacra Catedral Torrentista', también se
+				construyó el Senado de la República entre otros edificios importantes hasta la fecha.
+			</p>
+			<p>
+				Pero la decadencia apenas comenzaba.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/25Jul20.jpg' | relative_url }}">
+				<img id="25Jul20"
+					alt="Mapa de Austin, Urbenia en el hotel 'Consul Chris de Roma' (Austin, Urbenia), 25 de julio del 2020"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/25Jul20.jpg' | relative_url }}">
 			</div>
 
 			<h3> Abril del 2021 </h3>
 			<p>
-				Poco a poco los jugadores del servidor comenzaron a irse debido a la monotonía que era jugar haciendo
+				Poco a poco, los jugadores del servidor comenzaron a irse debido a la monotonía que era jugar haciendo
 				lo mismo, sin embargo, aproximadamente el día 10 de abril del 2021 Torrente fue invitado a un servidor
 				en supervivencia de Minecraft perteneciente a Johan, a jugar junto a Josh, Christopher e Isaac,
 				además, se le comisionó a hacer el paquete de texturas para ese servidor.
 			</p>
 			<p>
-				Torrente invitó a amigos suyos como Paty, Frye, Roman, Mayrin y MaFer.
-			</p>
-			<p>
-				Ese servidor no terminó bien.
+				Torrente invitó a amigos suyos como Paty, Frye, Roman, Mayrin y MaFer, pero no terminó nada bien.
 			</p>
 			<p> Así, Torrente decidió separarse del servidor de "La Coalición", del servidor de "Dungeons n' Dragons"
 				y mejor descargó el mundo de la época 3 para reformar las construcciones.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/11Abr21.jpg' | relative_url }}">
+				<img id="11Abr21"
+					alt="Plaza central del pueblo medieval en 'Dungeons n' Creepers', 11 de abril del 2021"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/11Abr21.jpg' | relative_url }}">
 			</div>
 
 			<h3> 28 de julio del 2021 </h3>
 			<p>
-				Un buen día, Paty crea la idea de hacer un servidor de Minecraft exclusivo para Urbenia en modo
+				Pocas semanas después de la finalización del servidor de "Dungeons n' Creepers", Paty mensajea a
+				Torrente y propone la idea de hacer un servidor de Minecraft exclusivo para Urbenia en modo
 				supervivencia y Torrente lo termina el 28 de julio, invitando a gente nueva.
 			</p>
 			<p>
-				El servidor termina aproximadamente en diciembre o enero del 2022.
+				Además, Frye pregunta a Torrente qué pasará con la historia que ella creó para "Dungeons n' Creepers"
+				y Torrente le propone que parte de esa historia sea real y parte sea una leyenda, incluido lo ocurrido
+				en dicho servidor.
+			</p>
+			<p>
+				El servidor de Urbenia termina aproximadamente en diciembre o enero del 2022.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/28Jul21.png' | relative_url }}">
+				<img id="28Jul21"
+					alt="Publicación de Carlos para promocionar el servidor de Urbenia en Facebook, 28 de julio del 2021"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/28Jul21.png' | relative_url }}">
 			</div>
 
 			<h3> 11 de noviembre del 2021 </h3>
 			<p>
-				Se crea esta página web.
+				Torrente crea esta página web para aprender a hacerlo antes de entrar a la universidad y, durante 
+				la gestación del proyecto, decide que la página web de Urbenia debe ser un lugar centralizado donde
+				se pueda encontrar información sobre el país así como para sus cosas personales, -pues se incluía un
+				"horario"-.
+			</p>
+			<p>
+				Esta página web pronto evoluciona y pasa a ser exclusivamente de Urbenia y los proyectos de Torrente
+				o de sus amigxs, más que algo personal cómo un horario de clases, pero las actualizaciones no 
+				son tan frecuentes, al menos no en largos intervalos.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/11Nov21.jpg' | relative_url }}">
+				<img id="11Nov21"
+					alt="Primera imagen de esta página web publicada en Facebook, 11 de noviembre del 2021"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/11Nov21.jpg' | relative_url }}">
 			</div>
 
 			<h3> 16 de octubre del 2022 </h3>
 			<p>
 				Un 11 de enero del 2022 Torrente encontró el mundo de Minecraft Java perfecto para comenzar una
-				nueva época y el 16 de octubre de ese año, la construcción de Urbenia volvió a comenzar.
+				nueva época y el 16 de octubre de ese año, la construcción de Urbenia volvió a comenzar, siendo
+				marcado por el levantamiento del antiguo reino de Otwór, el castillo y su pueblo, así como la plaza
+				roja con su imponente bandera y el museo de Bellas Artes.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/17Oct22.jpg' | relative_url }}">
+				<img id="17Oct22"
+					alt="La Plaza Roja, el Museo de las Bellas Artes y el letrero del país (Austin, Urbenia), 17 de octubre del 2022"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/17Oct22.jpg' | relative_url }}">
 			</div>
 			<p>
-				El plan fue sencillo, organizar la historia, centralizar la información y mejorar. La historia iría
-				a ser continuada, ahora por Frye y Torrente.
+				El plan fue sencillo: Crear y organizar la historia oficial, tomando lo ocurrido en "La 
+				Coalición", "Dungeons n' Creepers", el juego web de simulación "NationStates" y lo que se 
+				decidiera, -ahora no sólo a manos de Torrente, sino con la ayuda de Frye-, centralizar 
+				la información y mejorar, tanto la construcción del país cómo todo lo que rodease a Urbenia.
 			</p>
 			<p>
 				El 10 de octubre del 2023 fue el último día en que se publicaron actualizaciones del mundo de
-				Minecraft Java.
+				Minecraft Java y hasta la fecha ese mundo está perdido, puesto que, días antes, Torrente había
+				subido el mundo a Aternos para usar un pluggin que le permitía a jugadores de Bedrock y Java
+				jugar en el mismo servidor, pero sólo entró un par de ocasiones.
 			</p>
 			<div class="contenedorImagen">
-				<img src="{{ '/imagenes/imgAcercaDe/10Oct23.jpg' | relative_url }}">
+				<img id="10Oct23" alt="Última imagen satelital de Austin y Cerna, Urbenia, 10 de octubre del 2023"
+					class="zoomable" src="{{ '/imagenes/imgAcercaDe/10Oct23.jpg' | relative_url }}">
 			</div>
 
 			<h3> 2026 </h3>
 			<p>
 				Torrente, Frye y Paty dejaron de trabajar para Urbenia por momento, porque siempre es bueno darse un
-				tiempo y analizar las cosas, para regresar con ideas más frescas. Por eso, Torrente ha actualizado el
-				sitio web.
+				tiempo y analizar las cosas, sobre todo porque es importante regresar con ideas más frescas. 
+				Por eso, Torrente ha estado actualizando el sitio web.
 			</p>
 			<p>
-				Actualmente él y Frye se encuentran trabajando en un cortometraje, pero es posible que pronto haya más
-				noticias sobre la Magnífica República de Urbenia.
+				Actualmente él y Frye se encuentran trabajando en otros proyectos, -cómo lo fué el cortometraje
+				"Melancolía 2000: CDMX", la publicidad para la app "Explora CDMX" o los documentos para contar la 
+				historia de Urbenia con más ficción, combinando elementos de Minecraft, la vida real y Urbenia-,
+				pero es posible que pronto haya más noticias sobre la Magnífica República de Urbenia.
 			</p>
 			<p>
 				Este camino aún no se termina de recorrer, pero tú puedes ser parte de la historia.
@@ -237,8 +352,41 @@ layout: none
 		<p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
 	</h4>
 
+	<dialog id="modalImagen" class="modal">
+		<img id="cuerpoModal" src="" alt="">
+		<div id="pieFoto"></div>
+	</dialog>
+
 	<script src="{{ '/general/menu.js' | relative_url }}"></script>
 
+	<script>
+		// Obtención del modal y lugar dónde poner la info.
+		const modal = document.getElementById('modalImagen');
+		const imgAmpliada = document.getElementById('cuerpoModal');
+		const pieDeFoto = document.getElementById('pieFoto');
+
+		// Obtención de todas las imagenes del documento.
+		const imagenes = document.querySelectorAll('.zoomable');
+
+		// Iteración en cada imagen para buscar en la que se hizo click.
+		imagenes.forEach(img => {
+			img.addEventListener('click', () => {
+				imgAmpliada.src = img.src;
+				imgAmpliada.alt = img.alt;
+				pieDeFoto.textContent = img.alt;
+				modal.showModal(); // Abre el modal (dialog).
+				document.body.classList.add('modalAbierto');
+			});
+		});
+
+		// Función para cerrar el modal.
+		modal.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				modal.close();
+				document.body.classList.remove('modalAbierto');
+			}
+		});
+	</script>
 </BODY>
 
 </html>

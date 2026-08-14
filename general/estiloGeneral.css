@@ -1,6 +1,6 @@
 /*
     ESTE ARCHIVO CONTIENE CÓDIGO EN LENGUAJE CSS (CASCADING STYLE SHEETS) PARA ELEMENTOS
-    GENERALES CÓMO EL FONDO DE LAS PÁGINAS, FUENTES, ENTRE OTROS.
+    PRESENTES EN TODAS LAS PÁGINAS.
 */
 
 * {
@@ -12,6 +12,7 @@ body {
 	background-image: url(/imagenes/logos/imgFondo.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	overscroll-behavior: contain;
 }
 
 a {
@@ -23,16 +24,14 @@ a {
 .img-titulo {
 	/* Imagen debajo del menú y encima del cuerpo de la página */
 	text-align: center;
-	margin-top: 8px;
+	margin: 14px 0px 12px; /* Arriba, izquierda-derecha, abajo*/
 }
 
 .img-titulo img {
 	width: 50%;
-}
-
-.imgGenerica {
-	width: 150px;
-	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 8px black;
+	border-radius: 10px;
 }
 
 @media (max-width: 789px) {
