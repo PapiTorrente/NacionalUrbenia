@@ -4,36 +4,10 @@
 */
 
 /* Contenido de información */
-.fila {
-	padding: 4px;
-	display: flex;
-	align-items: center;
-    justify-content: center;
-}
-
-.columna {
-    width: 100%;
-	margin-left: 10px;
-	display: block;
-}
-
-.columna p {
-	text-align: justify;
-}
-
-@media (max-width: 530px) {
-	.fila {
-		display: grid;
-        justify-items: center;
-	}
-
-    .columna {
-        margin: 0px;
-    }
-
-    .columna h3 {
-        text-align: center;
-    }
+/* Aquí iría '.fila' y '.columna', buscar en 'estilosReutilizables'. */
+.imgGenerica {
+	width: 150px;
+	border-radius: 4px;
 }
 
 /* PARTE DE LOS BOTONES */

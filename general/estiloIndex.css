@@ -3,6 +3,17 @@
     EXCLUSIVOS DEL INDEX (O PÁGINA PRINCIPAL).
 */
 
+.contenedorAnuncio {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contenedorAnuncio img {
+    max-height: 450px;
+}
+
 .contenedorVideo {
     display: grid;
     place-items: center;

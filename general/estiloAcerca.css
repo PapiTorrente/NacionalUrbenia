@@ -2,8 +2,95 @@
     text-align: center;
 }
 
+.cajaColor {
+    padding: 2px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cajaColor p {
+    text-align: center;
+}
+
+.colorPrincipal {
+    height: 220px;
+    width: 220px;
+}
+
+.colorSecundario {
+    height: 150px;
+    width: 150px;
+}
+
+.filaAcerca {
+    justify-content: space-evenly;
+}
+
+/* Estilos para las imagenes y el modal que las muestra en grande. */
 .contenedorImagen img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
+    border-radius: 10px;
+    transition: box-shadow 0.4s;
     object-fit: contain;
+}
+
+.contenedorImagen img:hover {
+    box-shadow: 0px 0px 12px black;
+}
+
+/* Estilos del modal nativo (dialog) */
+#modalImagen {
+    border: none;
+    background: transparent;
+    padding: 0;
+    max-width: 90vw;
+    max-height: 90vh;
+    overscroll-behavior: contain;
+    overflow: hidden;
+    outline: none;
+}
+
+body.modalAbierto {
+    overflow: hidden;
+}
+
+#modalImagen[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fondo oscuro semitransparente al abrir */
+#modalImagen::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+/* Estilo de la imagen ampliada dentro del modal */
+#modalImagen img {
+    max-width: 90vw;
+    max-height: 80vh;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+#pieFoto {
+  margin-top: 4px;
+  color: white;
+  padding: 10px 0;
+}
+
+#modalImagen, #pieFoto {
+  animation-name: zoom;
+  animation-duration: 1.2s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
