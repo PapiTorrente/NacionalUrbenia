@@ -58,13 +58,17 @@ layout: none
 
 	<div class="contGeneral">
 		<div class="titulo">
-			<p> EXPLORA CDMX </p>
+			<p> ANUNCIOS </p>
 		</div>
-		<div class="contenedorVideo aspecto-16-9">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Iny_8OCLlZg?si=zNgcSZCs4DP1ifiM"
-				title="YouTube video player" frameborder="0"
-				allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen></iframe>
+		<div class="contenedorAnuncio">
+			<img class="carrusel" src="{{ '/imagenes/anuncios/Publicidad_Explora_CDMX_v2.1.0.png' | relative_url }}">
+			<img class="carrusel" src="{{ '/imagenes/anuncios/Publicidad_Logos.png' | relative_url }}">
+			<img class="carrusel" src="{{ '/imagenes/anuncios/Publicidad_Negocios_Explora_CDMX.png' | relative_url }}">
+		</div>
+	</div>
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> EXPLORA CDMX </p>
 		</div>
 		<div class="contenedorVideo aspecto-16-9">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/x3hv232dZqE?si=CozmG9A3aHc3tGQY"
@@ -78,12 +82,6 @@ layout: none
 	<div class="contGeneral">
 		<div class="titulo">
 			<p> MELANCOLÍA 2000: CDMX </p>
-		</div>
-		<div class="contenedorVideo aspecto-4-3">
-			<iframe width="560" height="420" src="https://www.youtube.com/embed/TPvlgM7eka8?si=Kvj2dMHSiSokCEsR"
-				title="YouTube video player" frameborder="0"
-				allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen></iframe>
 		</div>
 		<div class="contenedorVideo aspecto-4-3">
 			<iframe width="560" height="420" src="https://www.youtube.com/embed/ta0OUKtOCTs?si=iM7xFi-wKm76Wpkz"
@@ -120,6 +118,35 @@ layout: none
 
 	<script async src="https://www.tiktok.com/embed.js"></script>
 	<script src="{{ '/general/menu.js' | relative_url }}"></script>
+	<script>
+		//Inicialización de Variable Global
+		var indice = 0;
+
+		//Llamada a la función
+		funcCarrusel();
+
+		function funcCarrusel() {
+			//Inicialización de Variables Locales
+			var i;
+			var x = document.getElementsByClassName("carrusel"); //Lista de todas las imágenes con la clase carrusel
+
+			//Hace que todas las imágenes no se muestren
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+
+			indice++;
+			
+			//Reestablece el indice si este es mayor a la longitud de la lista de imágenes
+			if (indice > x.length) { indice = 1 }
+
+			//Muestra las imágenes
+			x[indice - 1].style.display = "block";
+
+			//Duerme a la función 6 segundos (6000 ms)
+			setTimeout(funcCarrusel, 6000);
+		}
+	</script>
 </BODY>
 
 

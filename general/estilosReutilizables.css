@@ -51,11 +51,11 @@
 	box-shadow: inset 0px 0px 12px black;
 }
 
-.bloqueGrisClaro h3 p {
+.bloqueGrisClaro h1,h2,h3,h4,h5 p {
 	margin: 16px;
 }
 
-.bloqueGrisClaro h3 {
+.bloqueGrisClaro h1,h2,h3,h4,h5 {
 	text-align: center;
 }
 
