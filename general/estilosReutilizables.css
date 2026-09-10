@@ -23,7 +23,7 @@
 	margin: 8px;
 	text-align: center;
 	background: #9a0000;
-	box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 4px black;
 	border-radius: 10px;
 }
 
@@ -40,7 +40,7 @@
 	margin: 8px;
 	border-radius: 10px;
 	background: #FFFFFF;
-	box-shadow: 0px 0px 12px black;
+	box-shadow: 0px 0px 10px black;
 }
 
 .bloqueGrisClaro {
@@ -48,7 +48,7 @@
 	margin: 8px;
 	border-radius: 10px;
 	background: #E0E0E0;
-	box-shadow: inset 0px 0px 12px black;
+	box-shadow: inset 0px 0px 8px black;
 }
 
 .bloqueGrisClaro h1,h2,h3,h4,h5 p {
@@ -73,7 +73,7 @@
 	padding: 8px;
 	margin: 4px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 8px black;
 }
 
 /* 
