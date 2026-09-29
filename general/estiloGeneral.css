@@ -9,7 +9,7 @@
 
 body {
 	background-color: #9A0000;
-	background-image: url(/imagenes/logos/imgFondo.jpg);
+	background-image: url(/imagenes/logos/fondo.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	overscroll-behavior: contain;
@@ -40,10 +40,10 @@ a {
 	}
 }
 
-hr {
-	background-color: black;
-	border: 4px solid black;
-	border-radius: 4px;
+.separador img {
+	/* Imagen a manera de separador en el pie de página */
+	width: 100%;
+	height: auto;
 }
 
 /* Pie de Página */
