@@ -6,9 +6,9 @@ var fecha = new Date();
 
 
 if((fecha.getMonth() + 1) == 9) { //Septiembre, mes patrio.
-    imagen_titulo.src = "'{{ '/imagenes/logos/tituloALaMexicana.png' | relative_url }}'";
+    imagen_titulo.src = "imagenes/logos/tituloALaMexicana.png";
 } else if((fecha.getMonth() + 1) == 6) { //Junio, mes del orgullo LGBT.
     //Cada día una bandera LGBT diferente.
 } else { //Cualquier otro mes.
-    imagen_titulo.src = "{{ '/imagenes/logos/URBtitulo.png' | relative_url }}";
+    imagen_titulo.src = "imagenes/logos/URBtitulo.png";
 }
