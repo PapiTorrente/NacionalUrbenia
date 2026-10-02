@@ -10,5 +10,5 @@ if((fecha.getMonth() + 1) == 9) { //Septiembre, mes patrio.
 } else if((fecha.getMonth() + 1) == 6) { //Junio, mes del orgullo LGBT.
     //Cada día una bandera LGBT diferente.
 } else { //Cualquier otro mes.
-    imagen_titulo.src = "imagenes/logos/URBtitulo.png";
+    imagen_titulo.src = "imagenes/logos/titulo.png";
 }
