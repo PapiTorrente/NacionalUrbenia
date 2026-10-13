@@ -9,6 +9,8 @@
 
 .foto img {
 	width: 48%;
+	border-radius: 6px;
+	border: 6px solid black;
 }
 
 .infoFecha {
