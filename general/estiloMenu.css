@@ -81,11 +81,18 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .6s;
+	width: 100%;
+	text-align: center;
 }
 
 .subMenu li a {
 	display: block;
 	padding: 8px;
+}
+
+.subMenu img {
+	width: 10%;
+	height: auto;
 }
 
 .listaMenu li:hover .subMenu {
