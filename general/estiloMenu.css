@@ -75,8 +75,6 @@
 	/* Aspecto de los submenus */
 	position: absolute;
 	background: #e5e5e5;
-	margin: 2px;
-	padding: 0px 4px;
 	border-radius: 15px;
 	visibility: hidden;
 	opacity: 0;
@@ -87,7 +85,7 @@
 
 .subMenu li a {
 	display: block;
-	padding: 8px;
+	padding: 7px;
 }
 
 .youtube {
