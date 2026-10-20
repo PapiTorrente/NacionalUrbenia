@@ -90,9 +90,20 @@
 	padding: 8px;
 }
 
-.subMenu img {
+.youtube {
+	width: 15%;
+}
+
+.instagram {
 	width: 10%;
-	height: auto;
+}
+
+.correo {
+	width: 12%;
+}
+
+.subMenu img {
+	vertical-align: center;
 }
 
 .listaMenu li:hover .subMenu {
