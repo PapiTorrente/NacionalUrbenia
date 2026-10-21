@@ -85,23 +85,11 @@
 
 .subMenu li a {
 	display: block;
-	padding: 7px;
+	padding: 6px;
 }
 
-.youtube {
-	width: 15%;
-}
-
-.instagram {
-	width: 10%;
-}
-
-.correo {
-	width: 12%;
-}
-
-.subMenu img {
-	vertical-align: center;
+.subMenu hr {
+	margin: 4px;
 }
 
 .listaMenu li:hover .subMenu {
