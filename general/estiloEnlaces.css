@@ -4,7 +4,24 @@
 */
 
 /* Contenido de información */
-/* Aquí iría '.fila' y '.columna', buscar en 'estilosReutilizables'. */
+/* Aquí iría '.columna', buscar en 'estilosReutilizables'. */
+/* El estilo de las clases '.fila' y '.columna' originales siguen en 'estilosReutilizables', 
+'.filaEnlaces' y '.columnaEnlaces' sólo aplican para esta página */
+
+.filaEnlaces {
+	display: grid;
+    justify-items: center;
+}
+
+.columnaEnlaces {
+    width: 100%;
+    display: block;
+}
+
+.columnaEnlaces p {
+    text-align: center;
+}
+
 .imgGenerica {
 	width: 150px;
 	border-radius: 4px;
