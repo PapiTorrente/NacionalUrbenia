@@ -4,29 +4,7 @@
 */
 
 /* Contenido de información */
-/* Aquí iría '.columna', buscar en 'estilosReutilizables'. */
-/* El estilo de las clases '.fila' y '.columna' originales siguen en 'estilosReutilizables', 
-'.filaEnlaces' y '.columnaEnlaces' sólo aplican para esta página */
-
-.filaEnlaces {
-	display: grid;
-    justify-items: center;
-}
-
-.columnaEnlaces {
-    width: 100%;
-    display: block;
-}
-
-.columnaEnlaces p {
-    text-align: center;
-}
-
-@media (max-width: 530px) {
-    .columnaEnlaces p {
-        text-align: justify;
-    }
-}
+/* El estilo de las clases '.fila' y '.columna' se encuentran en 'estilosReutilizables' */
 
 .imgGenerica {
 	width: 150px;

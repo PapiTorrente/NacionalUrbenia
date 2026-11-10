@@ -5,6 +5,23 @@
 	O DE UN GRIS MÁS OBSCURO).
 */
 
+/*
+	ESTE ARCHIVO CONTIENE LAS SIGUIENTES CLASES:
+		- .presentacion
+		- .titulo
+		- .contGeneral
+		- .bloqueGrisClaro
+		- .contenedorBotones
+		- .boton
+		- .logoContenido
+		- .fila
+		- .columna
+		- .contenedorVideo
+		- .video-4-3
+		- .video-16-9
+		- blockquote
+*/
+
 .presentacion {
 	padding: 8px 20px;
 	margin: 8px;
@@ -78,7 +95,7 @@
 }
 
 /* Próximamente cambiar a 500px para hacer la animación*/
-.logo {
+.logoContenido {
 	width: 150px;
 	border-radius: 4px;
     box-shadow: 0px 0px 8px black;
@@ -89,34 +106,57 @@ Originalmente estos estilos estaban en 'estiloEnlaces' para su uso en 'enlaces',
 pero ahora también se usa en 'acerca'.
 */
 .fila {
-	padding: 4px;
-	display: flex;
-	align-items: center;
-    justify-content: center;
+	display: grid;
+	justify-items: center;
 }
 
 /* Aqui iría .imgGenerica, buscar en 'estiloEnlaces'. */
-
 .columna {
     width: 100%;
 	display: block;
 }
 
 .columna p {
-	text-align: justify;
+	text-align: center;
 }
 
 @media (max-width: 530px) {
-	.fila {
-		display: grid;
-        justify-items: center;
-	}
-
     .columna {
         margin: 0px;
     }
 
-    .columna h3 {
-        text-align: center;
+	.columna p {
+		text-align: center;
+	}
+}
+
+.contenedorVideo {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contenedorVideo iframe {
+    border-radius: 10px;
+}
+
+.video-4-3 {
+    aspect-ratio: 4 / 3;
+}
+
+.video-16-9 { 
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 789px) {
+    .contenedorVideo iframe {
+        width: 100%;
     }
+}
+
+blockquote {
+    /* Bloque de Tiktok y YouTube*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px black;
 }

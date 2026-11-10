@@ -63,7 +63,7 @@ body.modalAbierto {
   align-items: center;
 }
 
-/* Fondo oscuro semitransparente con animación al abrir */
+/* Fondo oscuro semitransparente que aparece animadamente al abrir */
 #modalImagen::backdrop {
     background-color: rgba(0, 0, 0, 0.0);
     backdrop-filter: blur(0px);
