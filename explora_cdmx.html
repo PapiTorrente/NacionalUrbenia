@@ -1,0 +1,92 @@
+---
+layout: none
+---
+
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+
+	<META http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<META name="keywords" content="Urbenia, minecraft, indie-web, homebrew">
+	<META name="author" content="Torrente">
+	<META name="description" content="NacionalUrbenia es la página web de la Magnífica República de Urbenia.">
+
+	<link rel="icon" href="{{ '/imagenes/logos/favicon.ico' | relative_url }}">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/general/estiloGeneral.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+
+	<TITLE> Urbenia | Explora CDMX </TITLE>
+
+</HEAD>
+
+<BODY>
+
+	{% include menu.html %}
+
+	<div class="img-titulo"><img id="img-titulo" src=""></div>
+
+	<div class="presentacion">
+		<p>
+			El departamento de tecnologías de la Magnífica República de Urbenia presenta este espacio para la
+            difusión de la aplicación "Explora CDMX" y la información pertinente a esta, cómo el registro de
+            cambios y la descarga de la misma.
+		</p>
+	</div>
+
+	<div class="contGeneral">
+		<div class="bloqueGrisClaro">
+			<div class="filaEnlaces">
+				<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
+				<img class="logo" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
+				<div class="columnaEnlaces">
+					<h3> Explora CDMX v3.0.0</h3>
+					<p>
+						¿Alguna vez has querido salir de paseo en la Ciudad de México y no sabes a dónde ir?
+					</p>
+					<p>
+						Pues no esperes más, porque Explora CDMX ha acabado con eso. Esta aplicación para móviles
+						android recopila sitios interesantes y te muestra la información necesaria para que sólo
+						tengas que elegir e ir.
+					</p>
+					<p>
+						Sin anuncios, sin muros de pago ni subscripciones; ¡Sólo tú y la ciudad a una aplicación
+						de distancia!
+					</p>
+					<p>
+						Además, ahora te envía notificaciones para que nunca pierdas la oportunidad de explorar Ciudad
+						de México.
+					</p>
+					<p>
+						¡Descárgala ya!
+					</p>
+					<div class="contenedorBotones">
+						<div class="boton github">
+							<a target="_blank" id="ExploraDescGithub"
+								href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.1"> Descarga
+								desde Github </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="separador">
+		<img src="{{ '/imagenes/logos/separador.png' | relative_url }}">
+	</div>
+
+	<h4>
+		<p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
+	</h4>
+
+	<script src="{{ '/general/menu.js' | relative_url }}"></script>
+	<script src="{{ '/general/img-titulo_dinamico.js' | relative_url }}"></script>
+
+</BODY>
+
+</html>

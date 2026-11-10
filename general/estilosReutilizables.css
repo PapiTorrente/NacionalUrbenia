@@ -77,6 +77,13 @@
 	text-align: center;
 }
 
+/* Próximamente cambiar a 500px para hacer la animación*/
+.logo {
+	width: 150px;
+	border-radius: 4px;
+    box-shadow: 0px 0px 8px black;
+}
+
 /* 
 Originalmente estos estilos estaban en 'estiloEnlaces' para su uso en 'enlaces', 
 pero ahora también se usa en 'acerca'.
