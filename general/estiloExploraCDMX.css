@@ -5,3 +5,12 @@
 .github a {
     color: white;
 }
+
+@keyframes achicar {
+    from {
+        width: 500px;
+    }
+    to {
+        width: 200px;
+    }
+}
