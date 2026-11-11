@@ -18,7 +18,8 @@ layout: none
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="{{ '/general/estiloGeneral.css' | relative_url }}">
 	<link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloExploraCDMX.css' | relative_url }}">
 
 	<TITLE> Urbenia | Explora CDMX </TITLE>
 
@@ -31,54 +32,98 @@ layout: none
 	<div class="img-titulo"><img id="img-titulo" src=""></div>
 
 	<div class="presentacion">
-		<div class="fila">
-				<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
-				<img class="logoContenido" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
-				<div class="columna">
-					<h2> Explora CDMX v3.0.0</h2>
-					<p>
-                        ¿Qué pasaría si quisieras salir de paseo en la Ciudad de México sin saber a dónde ir? Probablemente
-                        perderías horas buscando en el inmenso internet, pero, ¿y si te dijera que existe una aplicación
-                        que recopila sitios interesantes?
-					</p>
-					<p>
-                        Explora CDMX es una aplicación para móviles android que actua como una biblioteca y que hace el 
-                        trabajo duro por tí, para que tú sólo tengas que elegir e ir.
-					</p>
-					<p>
-						Sin anuncios, sin muros de pago ni subscripciones; ¡Sólo tú y la ciudad a una aplicación
-						de distancia!
-					</p>
-					<div class="contenedorBotones">
-						<div class="boton github">
-							<a target="_blank" id="ExploraDescGithub"
-								href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.1"> Descarga
-								desde Github </a>
-						</div>
+		<div class="filav2">
+			<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
+			<img class="logoContenido" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
+			<div class="columna">
+				<h2> Explora CDMX v3.0.0</h2>
+				<p>
+					¿Qué pasaría si quisieras salir de paseo en la Ciudad de México sin saber a dónde ir? Probablemente
+					perderías horas buscando en el inmenso internet, pero, ¿y si te dijera que existe una aplicación
+					que recopila sitios interesantes?
+				</p>
+				<p>
+					Explora CDMX es una aplicación para móviles android que actua como una biblioteca y que hace el
+					trabajo duro por tí, para que tú sólo tengas que elegir e ir.
+				</p>
+				<p>
+					Sin anuncios, sin muros de pago ni subscripciones; ¡Sólo tú y la ciudad a una aplicación
+					de distancia!
+				</p>
+				<div class="contenedorBotones">
+					<div class="boton github">
+						<a target="_blank" id="ExploraDescGithub"
+							href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.1"> Descarga
+							desde Github </a>
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 
 	<div class="contGeneral">
-        <div class="titulo">
+		<div class="titulo">
 			<p> Registro de Cambios </p>
 		</div>
 		<div class="bloqueGrisClaro">
-			<h3> Explora CDMX v3.0.0</h3>
-            <p></p>
+			<h3> Explora CDMX v3</h3>
+			<p>Esta publicación incluye los cambios de la versión 3.0.0 y 3.0.1.</p>
+			<ul>
+				<li>Posibilidad de deslizar entre pantallas</li>
+				<li>Nuevo selector de fecha y hora para los eventos a agendar.</li>
+				<li>Mejora de experiencia de usuario al agregar:</li>
+				<li>
+					<ul>
+						<li>Tarjeta al final de la lista de lugares para mover por encima del filtro el botón de "Más".
+						</li>
+						<li>Tarjeta cuando la lista está vacía. Puede aparecer al iniciar la aplicación o al aplicar
+							algún filtro.</li>
+					</ul>
+				</li>
+				<li>Calendario y selector de fecha en español.</li>
+				<li>Botones de acción con la misma apariencia para mantener el estilo de la aplicación.</li>
+				<li>Botón para enviar un correo a desarrolladores de Explora CDMX según haya errores, sugerencias o
+					dudas con la aplicación.</li>
+				<li>Notificaciones exactas.</li>
+			</ul>
+			<h4>Otros Cambios</h4>
+			<ul>
+				<li>Modificación de la pantalla de carga de la app, añadiendo un color rosa obscuro al fondo y un icono
+					adaptativo de android que ocupe la forma.</li>
+				<li>Creación de archivos para pantalla de calendario y de usuario con la finalidad de separar la lógica.
+				</li>
+				<li>Cambio de titulo Anteriormente era ¡Hora de Explorar!, sin embargo, me di cuenta que quedaba mejor
+					simplemente cómo Explora CDMX.</li>
+				<li>Corrección de lógica: Los selectorres de fecha y hora reiniciaban sus valores a 'now' cuando eran
+					abiertos. Ahora su valor se queda almacenado y se muestra al abrir los selectores hasta que el
+					usuario cambie de valor o cierre la tarjeta de 'Agendar'.</li>
+				<li>Aumento de versión de las dependencias. Esto trajo un error que se solucionó en la versión 3.0.1:
+				</li>
+				<li>
+					<ul>
+						<li>Corrección para inicio de sesión con google: La nueva versión de la librería requiere
+							inicializar la instancia con 'serverClientId' de forma explícita, por lo tanto en la v3.0.0
+							no funcionaba.</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</div>
 
-    <div class="contGeneral">
-        <div class="titulo">
+	<div class="contGeneral">
+		<div class="titulo">
 			<p> Anuncios / Publicidad </p>
+		</div>
+		<div class="contenedorVideo aspecto-16-9">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Iny_8OCLlZg?si=zNgcSZCs4DP1ifiM"
+				title="YouTube video player" frameborder="0"
+				allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
 		</div>
 		<div class="contenedorVideo aspecto-16-9">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/x3hv232dZqE?si=CozmG9A3aHc3tGQY"
 				title="YouTube video player" frameborder="0"
-				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-				allowfullscreen>
+				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen>
 			</iframe>
 		</div>
 	</div>

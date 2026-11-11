@@ -32,7 +32,7 @@
 	/* Coloca una "burbuja" de color gris alrededor de la bandera con bordes inferiores redondeados */
 	background: #4A4A4A;
 	box-shadow: 0px 0px 10px black;
-	border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 .navegacion {
@@ -63,19 +63,19 @@
 	display: block;
 	padding: 10px 36px;
 	margin: 2px;
-	border-radius: 15px;
+	border-radius: 10px;
 	background: #ffffff;
 }
 
 .listaMenu li a:hover {
-	color: #CE7D35;
+	color: #E4007C;
 }
 
 .subMenu {
 	/* Aspecto de los submenus */
 	position: absolute;
 	background: #e5e5e5;
-	border-radius: 15px;
+	border-radius: 12px;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .6s;

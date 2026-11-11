@@ -106,28 +106,42 @@ Originalmente estos estilos estaban en 'estiloEnlaces' para su uso en 'enlaces',
 pero ahora también se usa en 'acerca'.
 */
 .fila {
+	padding: 4px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.filav2 {
 	display: grid;
-	justify-items: center;
+    justify-items: center;
 }
 
 /* Aqui iría .imgGenerica, buscar en 'estiloEnlaces'. */
+
 .columna {
     width: 100%;
+	margin-left: 10px;
 	display: block;
 }
 
 .columna p {
-	text-align: center;
+	text-align: justify;
 }
 
 @media (max-width: 530px) {
+	.fila {
+		display: grid;
+        justify-items: center;
+	}
+
     .columna {
         margin: 0px;
     }
 
-	.columna p {
-		text-align: center;
-	}
+    .columna h3 {
+        text-align: center;
+    }
 }
 
 .contenedorVideo {
