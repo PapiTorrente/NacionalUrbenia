@@ -14,3 +14,14 @@
         width: 200px;
     }
 }
+
+@media (max-width: 789px) {
+    @keyframes achicar {
+        from {
+            width: 90%;
+        }
+        to {
+            width: 30%;
+        }
+    }
+}
