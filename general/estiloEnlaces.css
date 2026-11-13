@@ -14,7 +14,11 @@
 
 /* PARTE DE LOS BOTONES */
 .documento {
-    background-color: white;
+    background-color: #ffffff;
+}
+
+.documento:hover {
+    background-color: #e4e4e4;
 }
 
 .documento a {
@@ -23,6 +27,10 @@
 
 .urbenia {
     background-color: #E4007C;
+}
+
+.urbenia:hover {
+    background-color: #89004B;
 }
 
 .urbenia a {
@@ -41,6 +49,10 @@
     background-color: #ff0000;
 }
 
+.youtube:hover {
+    background-color: #c90000;
+}
+
 .youtube a {
     color: #FAFAFA;
 }
@@ -49,17 +61,24 @@
     background-color: #1DB954;
 }
 
+.spotify:hover {
+    background-color: #169041;
+}
+
 .spotify a {
     color: #191414;
 }
 
 .no-disponible {
-    background-color: grey;
-    color: white;
+    background-color: #808080;
+}
+
+.no-disponible:hover {
+    background-color: #535353;
 }
 
 .no-disponible a {
     pointer-events: none;
     cursor: not-allowed;
-    color: white;
+    color: #ffffff;
 }
