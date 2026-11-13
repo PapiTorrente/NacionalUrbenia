@@ -92,6 +92,7 @@
 	margin: 4px;
 	border-radius: 10px;
 	text-align: center;
+	box-shadow: 0px 4px black;
 }
 
 /* Próximamente cambiar a 500px para hacer la animación*/

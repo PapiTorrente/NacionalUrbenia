@@ -18,11 +18,11 @@
 }
 
 .documento:hover {
-    background-color: #e4e4e4;
+    background-color: #ededed;
 }
 
 .documento a {
-    color: black;
+    color: #000000;
 }
 
 .urbenia {
@@ -34,15 +34,19 @@
 }
 
 .urbenia a {
-    color: white;
+    color: #ffffff;
 }
 
 .github {
-    background-color: black;
+    background-color: #000000;
+}
+
+.github:hover {
+    background-color: #3b3b3b;
 }
 
 .github a {
-    color: white;
+    color: #ffffff;
 }
 
 .youtube {
