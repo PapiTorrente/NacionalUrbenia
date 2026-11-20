@@ -1,0 +1,94 @@
+---
+layout: none
+---
+
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+
+	<META http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<META name="keywords" content="Urbenia, minecraft, indie-web, homebrew">
+	<META name="author" content="Torrente">
+	<META name="description" content="NacionalUrbenia es la página web de la Magnífica República de Urbenia.">
+
+	<link rel="icon" href="{{ '/imagenes/logos/favicon.ico' | relative_url }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/general/estiloGeneral.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/general/estiloExploraCDMX.css' | relative_url }}">
+
+	<TITLE> Urbenia | Explora CDMX </TITLE>
+
+</HEAD>
+
+<BODY>
+
+	{% include menu.html %}
+
+	<div class="img-titulo"><img id="img-titulo" src=""></div>
+
+    <div class="presentacion">
+        <div class="filav2">
+            <!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
+            <div class="columna">
+                <h2> Explora CDMX v3.0.2</h2>
+                <h4>Explora CDMX, desarrollada por Torrente</h4>
+                <div class="contenedorBotones">
+                    <div class="boton github">
+                        <a target="_blank" id="ExploraDescGithub"
+                            href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.2"> Descarga
+                            desde Github </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="contGeneral">
+		<div class="titulo">
+			<p> Explora CDMX - Eliminación de Cuenta y Datos </p>
+		</div>
+		<div class="bloqueGrisClaro">
+			<p>Para eliminar tu cuenta y tus datos puedes enviarnos un correo electrónico desde el correo asociado a la aplicación. No es necesario que expliques nada.</p>
+            <p>Adicionalmente, puedes eliminar tú tus propios datos en la aplicación desde la página "Tú".</p>
+            <p>Por el momento la eliminación será de esta manera, pero estamos trabajando en agregar un sistema más confiable.</p>
+			<div class="contenedorBotones">
+				<div class="boton urbenia">
+					<a target="_blank" id="EliminacionCuenta"
+						href="mailto:exploracdmx.nacionalurbenia@gmail.com"> Eliminación de Cuenta </a>
+				</div>
+			</div>
+
+            <h3>¿Qué se elimina?</h3>
+            <p>Todo lo que tú hayas creado (tu cuenta de usuario y los eventos agendados).</p>
+
+            <h3>¿Qué <strong>NO</strong> se elimina?</h3>
+            <p>Nada, toda tu información se elimina.</p>
+
+            <h3>¿Cuánto tiempo tarda la eliminación?</h3>
+            <p>Por el momento, la eliminación de tu cuenta es instantánea, pero los eventos agendados tardarán pues son eliminados manualmente (independientemente de si lo haces tú o nosotros).</p>
+		</div>
+	</div>
+
+	<div class="separador">
+		<img src="{{ '/imagenes/logos/separador.png' | relative_url }}">
+	</div>
+
+	<h4>
+		<p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
+	</h4>
+
+	<script src="{{ '/general/menu.js' | relative_url }}"></script>
+	<script src="{{ '/general/img-titulo_dinamico.js' | relative_url }}"></script>
+
+</BODY>
+
+</html>
