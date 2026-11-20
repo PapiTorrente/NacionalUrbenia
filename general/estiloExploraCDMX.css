@@ -1,5 +1,21 @@
+.urbenia {
+    background-color: #E4007C;
+}
+
+.urbenia:hover {
+    background-color: #89004B;
+}
+
+.urbenia a {
+    color: #ffffff;
+}
+
 .github {
     background-color: black;
+}
+
+.github:hover {
+    background-color: #3b3b3b;
 }
 
 .github a {
