@@ -1,0 +1,130 @@
+---
+layout: none
+---
+
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+
+    <META http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <META name="keywords" content="Urbenia, minecraft, indie-web, homebrew">
+    <META name="author" content="Torrente">
+    <META name="description" content="NacionalUrbenia es la página web de la Magnífica República de Urbenia.">
+
+    <link rel="icon" href="{{ '/imagenes/logos/favicon.ico' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/general/estiloGeneral.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/general/estiloMenu.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/general/estilosReutilizables.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/general/estiloExploraCDMX.css' | relative_url }}">
+
+    <TITLE> Urbenia | Explora CDMX - Política de Privacidad </TITLE>
+
+</HEAD>
+
+<BODY>
+
+    {% include menu.html %}
+
+    <div class="img-titulo"><img id="img-titulo" src=""></div>
+
+    <div class="presentacion">
+        <div class="filav2">
+            <!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
+            <div class="columna">
+                <h2> Explora CDMX v3.0.0</h2>
+                <div class="contenedorBotones">
+                    <div class="boton github">
+                        <a target="_blank" id="ExploraDescGithub"
+                            href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.2"> Descarga
+                            desde Github </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contGeneral">
+        <div class="titulo">
+            <p> Explora CDMX - Política de Privacidad </p>
+        </div>
+        <div class="bloqueGrisClaro">
+            <h3> Contacto </h3>
+            <div class="contenedorBotones">
+                <div class="boton urbenia">
+                    <a target="_blank" id="ContactoCorreo" href="mailto:exploracdmx.nacionalurbenia@gmail.com"> Correo
+                        de Explora CDMX </a>
+                </div>
+            </div>
+
+            <h3> Datos que Recolectamos</h3>
+            <ul>
+                <li>Tu correo electrónico.</li>
+                <li>Datos de los eventos que crees como usuario:
+                    <ul>
+                        <li>ID de usuario que Firebase te asigna.</li>
+                        <li>Nombre del lugar que guardas en el calendario de la aplicación.</li>
+                        <li>Fecha y hora de inicio y finalización del evento.</li>
+                        <li>Color del evento que guardas en el calendario de la aplicación.</li>
+                        <li>ID de la notificación (en Android) creada para avisarte del evento próximo.</li>
+                        <li>Número de minutos antes del evento para enviar la notificación.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>¿Para qué se usan estos datos?</h3>
+            <ul>
+                <li>Inicio de Sesión e Identificación del usuario.</li>
+                <li>Guardar eventos en el calendario de la aplicación.</li>
+                <li>Mostrar notificaciones cuando un evento está cerca de la hora en la que se agendó.</li>
+                <li>Recuperar los eventos que agendaste al volver a instalar la aplicación.</li>
+            </ul>
+
+            <h3>Servicios e Infraestructura de Terceros</h3>
+            <ul>
+                <li>Firebase (Google)</li>
+            </ul>
+            <p>Usamos los servicios de Firebase para almacenar la lista de lugares que se muestran en la aplicación, así
+                como la gestión de cuentas de usuarios (incluyendo la creación y eliminación de estas).</p>
+
+            <h3>Eliminación de los Datos</h3>
+            <p>Los datos que almacenamos en Firebase son retenidos hasta que el usuario decida eliminarlos mediante la
+                eliminación del o los eventos que agendó y la eliminación de su cuenta mediante la página "Tú".</p>
+            <p>Asimismo, si deseas eliminar los datos que almacenamos sin necesidad de reinstalar la aplicación, puedes solicitarlo mediante correo electrónico.</p>
+            
+            <h3>Otros</h3>
+            <p>Explora CDMX <strong>NO</strong> vende tu información a anunciantes.</p>
+            <p>Explora CDMX <strong>NO</strong> te muestra anuncios.</p>
+            <p>Explora CDMX <strong>NO</strong> tiene permiso de acceder a tu ubicación.</p>
+            <p>Explora CDMX <strong>NO</strong> requiere suscripciones.</p>
+            <p>Explora CDMX <strong>NO</strong> oculta cosas detrás de muros de pago.</p>
+
+            <h3>Actualizaciones de la Política de Privacidad</h3>
+            <p>Al actualizar esta Política de Privacidad, nosotros avisaremos de los cambios mediante la fecha de
+                "Última Actualización" y publicaciones en nuestro perfil de Instagram.</p>
+
+            <p>Última Actualización: 20/Nov/2026</p>
+        </div>
+    </div>
+
+    <div class="separador">
+        <img src="{{ '/imagenes/logos/separador.png' | relative_url }}">
+    </div>
+
+    <h4>
+        <p style="text-align: right;"> Copyright Urbenia™ Derechos Reservados </p>
+    </h4>
+
+    <script src="{{ '/general/menu.js' | relative_url }}"></script>
+    <script src="{{ '/general/img-titulo_dinamico.js' | relative_url }}"></script>
+
+</BODY>
+
+</html>
