@@ -71,13 +71,14 @@
 .listaMenu li a:hover {
 	color: #E4007C;
 	background: #e4e4e4;
+	border-radius: 10px;
 }
 
 .subMenu {
 	/* Aspecto de los submenus */
 	position: absolute;
 	background: #e5e5e5;
-	border-radius: 12px;
+	border-radius: 10px;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .6s;
