@@ -40,7 +40,7 @@ layout: none
 			<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
 			<img class="logoContenido" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
 			<div class="columna">
-				<h2> Explora CDMX v3.0.2</h2>
+				<h2> Explora CDMX v3.0.3</h2>
 				<p>
 					¿Qué pasaría si quisieras salir de paseo en la Ciudad de México sin saber a dónde ir? Probablemente
 					perderías horas buscando en el inmenso internet, pero, ¿y si te dijera que existe una aplicación
@@ -79,7 +79,7 @@ layout: none
 			<div class="contenedorBotones">
 				<div class="boton urbenia">
 					<a id="EliminacionCuenta"
-						href="{{ '/explora_cdmx_eliminar_cuenta.html' | relative_url }}"> Conocer Más </a>
+						href="{{ '/explora_cdmx_eliminar_cuenta.html' | relative_url }}"> Conoce Más </a>
 				</div>
 			</div>
 		</div>
@@ -90,48 +90,17 @@ layout: none
 			<p> Registro de Cambios </p>
 		</div>
 		<div class="bloqueGrisClaro">
-			<h3> Explora CDMX v3</h3>
-			<p>Esta publicación incluye los cambios de la versión 3.0.0, 3.0.1 y 3.0.2.</p>
+			<h3> Explora CDMX v3.0.3</h3>
 			<ul>
-				<li>Posibilidad de deslizar entre pantallas</li>
-				<li>Nuevo selector de fecha y hora para los eventos a agendar.</li>
-				<li>Mejora de experiencia de usuario al agregar:
+				<li>Corrección de Inicio de Sesión con Google:
 					<ul>
-						<li>Tarjeta al final de la lista de lugares para mover por encima del filtro el botón de "Más".
-						</li>
-						<li>Tarjeta cuando la lista está vacía. Puede aparecer al iniciar la aplicación o al aplicar
-							algún filtro.</li>
+						<li>La versión anterior en que se había corregido quedó obsoleta al firmar la aplicación con una llave de "release" pues los algoritmos "SHA-1" y "SHA-256" ya no eran los mismos, así que se tuvieron que generar de nuevo.</li>
 					</ul>
 				</li>
-				<li>Calendario y selector de fecha en español.</li>
-				<li>Botones de acción con la misma apariencia para mantener el estilo de la aplicación.</li>
-				<li>Botón para enviar un correo a desarrolladores de Explora CDMX según haya errores, sugerencias o
-					dudas con la aplicación.</li>
-				<li>Notificaciones exactas.</li>
-			</ul>
-			<h4>Otros Cambios</h4>
-			<ul>
-				<li>Modificación de la pantalla de carga de la app, añadiendo un color rosa obscuro al fondo y un icono
-					adaptativo de android que ocupe la forma.</li>
-				<li>Creación de archivos para pantalla de calendario y de usuario con la finalidad de separar la lógica.
-				</li>
-				<li>Cambio de titulo Anteriormente era ¡Hora de Explorar!, sin embargo, me di cuenta que quedaba mejor
-					simplemente cómo Explora CDMX.</li>
-				<li>Corrección de lógica: Los selectorres de fecha y hora reiniciaban sus valores a 'now' cuando eran
-					abiertos. Ahora su valor se queda almacenado y se muestra al abrir los selectores hasta que el
-					usuario cambie de valor o cierre la tarjeta de 'Agendar'.</li>
-				<li>Aumento de versión de las dependencias. Esto trajo un error que se solucionó en la versión 3.0.1:
-					<ul>
-						<li>Corrección para inicio de sesión con google: La nueva versión de la librería requiere
-							inicializar la instancia con 'serverClientId' de forma explícita, por lo tanto en la v3.0.0
-							no funcionaba.</li>
-					</ul>
-				</li>
-				<li>Cambio de colores de la app a "Rosa Mexicano".</li>
-				<li>Mejoras en la interfaz: Acomodo de elementos en tarjeta agendar y editar evento.</li>
-				<li>Adición de una fuente de texto para todos los celulares.</li>
-				<li>Corrección de texto en página de Inicio de Sesión y Registro: El título de la app debe llevar
-					espacio.</li>
+				<li>El botón "¿Olvidaste tu Contraseña?" ahora envía a una pantalla para introducir el correo registrado en vez de usar los campos de la pantalla de "Inicio de Sesión".</li>
+				<li>Incluye y permite copiar el ID de Usuario desde la pantalla "Tú".</li>
+				<li>El botón de "Enviar Correo" en la pantalla "Tú" ahora incluye el ID de Usuario en el cuerpo del correo.</li>
+				<li>El botón de "Borrar Cuenta" ahora elimina automáticamente los eventos que el usuario generó.</li>
 			</ul>
 		</div>
 	</div>
