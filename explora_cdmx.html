@@ -40,7 +40,7 @@ layout: none
 			<!-- ACTUALIZAR href, download y h3. NO LO VAYAS A OLVIDAR OTRA VEZ. -->
 			<img class="logoContenido" src="{{ '/imagenes/imgEnlaces/explora_cdmx_icono.png' | relative_url }}">
 			<div class="columna">
-				<h2> Explora CDMX v3.0.3</h2>
+				<h2> Explora CDMX v3.0.4</h2>
 				<p>
 					¿Qué pasaría si quisieras salir de paseo en la Ciudad de México sin saber a dónde ir? Probablemente
 					perderías horas buscando en el inmenso internet, pero, ¿y si te dijera que existe una aplicación
@@ -58,7 +58,7 @@ layout: none
 				<div class="contenedorBotones">
 					<div class="boton github">
 						<a target="_blank" id="ExploraDescGithub"
-							href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.2"> Descarga
+							href="https://github.com/PapiTorrente/ExploraCDMX/releases/tag/v3.0.4"> Descarga
 							desde Github </a>
 					</div>
 					<div class="boton urbenia">
@@ -90,17 +90,19 @@ layout: none
 			<p> Registro de Cambios </p>
 		</div>
 		<div class="bloqueGrisClaro">
-			<h3> Explora CDMX v3.0.3</h3>
+			<h3> Explora CDMX v3.0.4</h3>
 			<ul>
-				<li>Corrección de Inicio de Sesión con Google:
+				<li>Tercera corrección de Inicio de Sesión con Google:
 					<ul>
-						<li>La versión anterior en que se había corregido quedó obsoleta al firmar la aplicación con una llave de "release" pues los algoritmos "SHA-1" y "SHA-256" ya no eran los mismos, así que se tuvieron que generar de nuevo.</li>
+						<li>La versión anterior en que se había corregido quedó obsoleta pues para usar el servicio se requiere que las huellas digitales "SHA-1" y "SHA-256" de Google Play Console y la mía estuvieran en la configuración de Firebase.</li>
 					</ul>
 				</li>
 				<li>El botón "¿Olvidaste tu Contraseña?" ahora envía a una pantalla para introducir el correo registrado en vez de usar los campos de la pantalla de "Inicio de Sesión".</li>
+				<li>El botón para reestablecer la contraseña ahora tiene un tamaño apropiado.</li>
 				<li>Incluye y permite copiar el ID de Usuario desde la pantalla "Tú".</li>
+				<li>El botón ahora se muestra debajo del ID de Usuario.</li>
 				<li>El botón de "Enviar Correo" en la pantalla "Tú" ahora incluye el ID de Usuario en el cuerpo del correo.</li>
-				<li>El botón de "Borrar Cuenta" ahora elimina automáticamente los eventos que el usuario generó.</li>
+				<li>El botón de "Borrar Cuenta" ahora elimina automáticamente los eventos que el usuario generó, pero requiere autenticarse (cerrar y abrir sesión).</li>
 			</ul>
 		</div>
 	</div>
